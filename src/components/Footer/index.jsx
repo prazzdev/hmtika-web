@@ -8,7 +8,11 @@ export default function Footer() {
     const year = date.getFullYear()
     return (
         <footer 
-            className="bg-pgray px-4 divide-y">
+            className="bg-pgray px-4 divide-y"
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out">
             <div className="container flex flex-col justify-between py-6 mx-auto space-b-8 lg:flex-row lg:space-y-0">
                 <div className="lg:w-1/3 hidden lg:inline">
                     <a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start">

@@ -5,7 +5,13 @@ export default function kegiatanRutin() {
     return (
         <>
         <Layout pageTitle={'Kegiatan Rutin'}>
-            <section className="pt-[100px]">
+            <section 
+                className="pt-[100px]"
+                data-aos="fade-in"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                data-aos-easing="ease-in-out"
+            >
                 <h1 className="text-xl text-pgray font-bold text-center mb-10">Kegiatan Rutin</h1>
                 <div className="flex flex-col items-center">
                     <Card

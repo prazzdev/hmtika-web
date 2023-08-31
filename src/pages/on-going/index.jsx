@@ -4,10 +4,16 @@ export default function kegiatanOnGoing() {
     return (
         <>
         <Layout pageTitle={'Kegiatan on Going'}>
-            <section className="pt-[100px]">
+            <section 
+                className="pt-[100px]"
+                data-aos="fade-in"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                data-aos-easing="ease-in-out"
+            >
                 <h1 className="text-xl text-pgray font-bold text-center mb-10">Kegiatan On Going</h1>
-                <div className="px-6">
-                    <article class="rounded-xl bg-white p-4 ring ring-indigo-50 sm:p-6 lg:p-8">
+                <div className="px-6 pb-10">
+                    <article class="rounded-xl bg-gray-100 p-5 pt-6 sm:p-6 lg:p-8 shadow-md">
                         <div class="flex items-start sm:gap-8">
                             <div
                             class="hidden sm:grid sm:h-20 sm:w-20 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border-2 sm:border-indigo-500"
@@ -26,12 +32,12 @@ export default function kegiatanOnGoing() {
                             <strong
                                 class="rounded border border-gray-400 bg-gray-400 px-3 py-1.5 text-[10px] font-medium text-white mr-2"
                             >
-                                Pelatihan
+                                Training
                             </strong>
                             <strong
                                 class="rounded border border-teal-400 bg-teal-400 px-3 py-1.5 text-[10px] font-medium text-white"
                             >
-                                Episode #101
+                                Episode #01
                             </strong>
 
                             <h3 class="mt-4 text-lg text-pgray font-medium sm:text-xl">
