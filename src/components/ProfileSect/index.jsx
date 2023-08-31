@@ -7,7 +7,7 @@ export default function ProfileSect() {
             id="ProfileSect"
             className={styles.ProfileSect}>
             <div className="def-container bg-pgray flex flex-col mx-auto">
-                <h1 className="uppercase font-bold text-xl text-gray-600 mx-auto mb-5">Profil</h1>
+                <h1 className="uppercase font-bold text-xl text-gray-600 mx-auto mb-5 animate__animated animate__bounce animate__delay-2s animate__repeat-2 2">Profil</h1>
                 <div className="">
                     <p className="text-justify text-gray-500">
                         Himpunan Mahasiswa Informatika (HMTIKA) merupakan salah satu himpunan bagi mahasiswa jurusan di STIMIK Tunas Bangsa Banjarnegara program studi Informatika.

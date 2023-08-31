@@ -13,15 +13,24 @@
 
 body {
   font-family: "Poppins";
-  background: #ddd;
+  background: #eee;
   position: relative;
 }
 
 .bg-pgray {
-  background-color: #ddd;
+  background-color: #eee;
 }
 .pbgcolor {
   background-color: #00ADB5;
+}
+.text-pgray {
+  color: rgb(75 85 99);
+}
+.text-sgray {
+  color: rgb(107 114 128);
+}
+.text-pteal {
+  color: #00ADB5;
 }
 .typText {
   text-shadow: 2px 2px 3px #000;

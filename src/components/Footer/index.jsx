@@ -1,3 +1,4 @@
+import Link from "next/link"
 import NavLink from "../partials/NavLink"
 
 const logo = './image/logo.webp'
@@ -7,11 +8,11 @@ export default function Footer() {
     const year = date.getFullYear()
     return (
         <footer 
-            className="px-4 divide-y">
+            className="bg-pgray px-4 divide-y">
             <div className="container flex flex-col justify-between py-6 mx-auto space-b-8 lg:flex-row lg:space-y-0">
                 <div className="lg:w-1/3 hidden lg:inline">
                     <a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start">
-                        <div className="flex items-center justify-center w-12 h-12 rounded-full dark:bg-violet-400">
+                        <div className="flex items-center justify-center w-12 h-12 rounded-full">
                             <img 
                                 src={logo} 
                                 alt="" 
@@ -23,15 +24,15 @@ export default function Footer() {
                 </div>
                 <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
                     <div className="flex flex-col">
-                        <h3 className="uppercase mb-4">Navigation</h3>
-                        <NavLink location={'/'} text={'Home'} />
-                        <NavLink location={'/about'} text={'About'} />
-                        <NavLink location={'/event'} text={'Event'} />
-                        <NavLink location={'/info'} text={'Info'} />
-                        <NavLink location={'/gallery'} text={'Gallery'} />
+                        <h3 className="text-pgray uppercase mb-4">Navigation</h3>
+                        <Link href={'/'} className="text-xs uppercase text-sgray mb-2">Beranda</Link>
+                        <Link href={'/visi-misi'} className="text-xs uppercase text-sgray mb-2">Visi Misi</Link>
+                        <Link href={'/susunan-pengurus'} className="text-xs uppercase text-sgray mb-2">Susunan Pengurus</Link>
+                        <Link href={'#'} className="text-xs uppercase text-sgray mb-2">E-Learning</Link>
+                        <Link href={'#'} className="text-xs uppercase text-sgray mb-2">Kegiatan Rutin</Link>
                     </div>
                     <div className="space-y-3">
-                        <div className="uppercase">Social media</div>
+                        <div className="text-pgray uppercase">Social media</div>
                         <div className="flex justify-start space-x-3">
                             <a rel="noopener noreferrer" href="#" title="Facebook" className="flex items-center p-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" className="w-5 h-5 fill-current">
@@ -55,7 +56,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="py-6 text-sm text-center">© {year} HMTIKA STB. All rights reserved.</div>
+            <div className="py-6 text-sm text-sgray text-center">© {year} HMTIKA STB. All rights reserved.</div>
         </footer>
     )
 }
