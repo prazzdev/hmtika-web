@@ -17,6 +17,9 @@ body {
   position: relative;
 }
 
+.bg-pgray {
+  background-color: #ddd;
+}
 .pbgcolor {
   background-color: #00ADB5;
 }
