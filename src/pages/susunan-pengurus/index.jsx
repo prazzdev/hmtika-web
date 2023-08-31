@@ -61,6 +61,7 @@ export default function susunanPengurus() {
                         ig="#"
                     />
                     <ProfileBox 
+                        thumb='alvin'
                         name="Alvin Widodo" 
                         position="Sekretaris 2" 
                         email="#"
@@ -69,6 +70,7 @@ export default function susunanPengurus() {
                         ig="#"
                     />
                     <ProfileBox 
+                        thumb='gilang'
                         name="Gilang Fajar Syabani" 
                         position="Humas" 
                         email="#"
@@ -77,6 +79,7 @@ export default function susunanPengurus() {
                         ig="#"
                     />
                     <ProfileBox 
+                        thumb='febri-sarif'
                         name="Febri Sarif H" 
                         position="Humas 2" 
                         email="#"
@@ -112,6 +115,7 @@ export default function susunanPengurus() {
                         ig="#"
                     />
                     <ProfileBox 
+                        thumb='asifa-ahmad'
                         name="Asifa Ahmad" 
                         position="Bidang Keilmuan" 
                         email="#"
@@ -120,6 +124,7 @@ export default function susunanPengurus() {
                         ig="#"
                     />
                     <ProfileBox 
+                        thumb='imam'
                         name="Imam Nur Falah" 
                         position="Bidang Keilmuan (2)" 
                         email="#"
