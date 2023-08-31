@@ -26,7 +26,7 @@ export default function visiMisi() {
                 </div>
                 <div className="flex flex-col mb-4">
                     <h1 className="text-pgray font-bold mx-auto mb-1">Misi :</h1>
-                    <ol className="text-sgray text-sm">
+                    <ol className="text-sgray text-sm text-justify">
                         <li>1. Meningkatkan skill ke-informatika-an bagi Mahasiswa Teknik Informatika.</li>
                         <li>2. Mewadahi dan menerima aspirasi dari Mahasiswa Teknik Informatika.</li>
                         <li>3. Menumbuhkan rasa tanggungjawab serta cinta terhadap Himpunan Mahasiswa  Teknik Informatika.</li>
@@ -34,7 +34,7 @@ export default function visiMisi() {
                 </div>
                 <div className="flex flex-col">
                     <h1 className="text-pgray font-bold mx-auto mb-1">Filosofi Logo</h1>
-                    <ol className="text-sgray text-sm">
+                    <ol className="text-sgray text-justify text-sm">
                         <li><b className="text-pgray">Simbol Lingkaran:</b> Melambangkan kebulatan tekad untuk mengarungi / mengikuti perkembangan dunia teknologi yang semakin pesat</li>
                         <li><b className="text-pgray">Simbol Jaringan:</b> Melambangkan jaringan-jaringan komputer yang berhubungan satu sama lain.</li>
                         <li><b className="text-pgray">Simbol Buku:</b> Melambangkan buku sebagai sumber ilmu pengetahuan yang luas sebagai bekal untuk mengarungi perkembangan teknologi yang semakin pesat.</li>

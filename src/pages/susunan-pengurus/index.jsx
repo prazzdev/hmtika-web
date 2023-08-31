@@ -27,12 +27,13 @@ export default function susunanPengurus() {
                         ig="#"
                     />
                     <ProfileBox 
+                        thumb='agung'
                         name="Agung Prasetyo" 
                         position="Co-Leader" 
                         email="mailto:prazzid31@gmail.com"
                         linkedIn="https://linkedin.com/agungpraz31"
                         github="https://github.com/prazzdev"
-                        ig="https://instagram.com/agungpraz31"
+                        ig="agungpraz31"
                     />
                     <ProfileBox 
                         thumb='arziqa'
