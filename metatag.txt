@@ -1,0 +1,15 @@
+<title>Himpunan Mahasiswa informatika (HMTIKA) - STIMIK Tunas Bangsa Banjarnegara</title>
+<meta name="title" content="Himpunan Mahasiswa informatika (HMTIKA) - STIMIK Tunas Bangsa Banjarnegara" />
+<meta name="description" content="Himpunan Mahasiswa Informatika (HMTIKA) merupakan salah satu himpunan bagi mahasiswa jurusan di STIMIK Tunas Bangsa Banjarnegara program studi Informatika." />
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://metatags.io/" />
+<meta property="og:title" content="Himpunan Mahasiswa informatika (HMTIKA) - STIMIK Tunas Bangsa Banjarnegara" />
+<meta property="og:description" content="Himpunan Mahasiswa Informatika (HMTIKA) merupakan salah satu himpunan bagi mahasiswa jurusan di STIMIK Tunas Bangsa Banjarnegara program studi Informatika." />
+<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://metatags.io/" />
+<meta property="twitter:title" content="Himpunan Mahasiswa informatika (HMTIKA) - STIMIK Tunas Bangsa Banjarnegara" />
+<meta property="twitter:description" content="Himpunan Mahasiswa Informatika (HMTIKA) merupakan salah satu himpunan bagi mahasiswa jurusan di STIMIK Tunas Bangsa Banjarnegara program studi Informatika." />
+<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />

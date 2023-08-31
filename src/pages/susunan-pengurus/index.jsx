@@ -3,7 +3,7 @@ import ProfileBox from "@/components/partials/ProfileBox";
 
 export default function susunanPengurus() {
     return (
-        <Layout pageTitle="Team">
+        <Layout pageTitle="Susunan Pengurus">
         <section 
         className="py-6 bg-pgray mt-16"
         data-aos="fade-in"
