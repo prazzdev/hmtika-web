@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Header from "../Header"
 import Footer from "../Footer"
+import NavMenu from "../NavMenu"
 
 export default function Layout({ children, pageTitle }) {
     let title
@@ -19,6 +20,7 @@ export default function Layout({ children, pageTitle }) {
             </Head>
             <Header />
             {children}
+            <NavMenu />
             <Footer />
         </>
     )

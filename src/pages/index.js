@@ -1,4 +1,3 @@
-import Desc3 from '@/components/Desc3'
 import Hero from '@/components/Hero'
 import Layout from '@/components/Layout'
 import ProfileSect from '@/components/ProfileSect'
