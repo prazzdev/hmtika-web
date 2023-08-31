@@ -16,7 +16,7 @@ export default function NavMenu() {
             <label htmlFor="my-drawer" className="drawer-overlay"></label>
             <ul className="menu fixed bottom-5 p-4 w-50 min-h-[300px] bg-base-20 text-base-content">
             <div className="dropdown dropdown-bottom">
-                <a href="/" className="bg-white hover:bg-[#00ADB5] text-gray-700 hover:text-white btn m-1 border-1 border-white hover:border-none">Beranda</a>
+                <Link href="/" className="bg-white hover:bg-[#00ADB5] text-gray-700 hover:text-white btn m-1 border-1 border-white hover:border-none">Beranda</Link>
             </div>
             <NavMenuDropDown 
                 title={'Tentang Kami'} 
