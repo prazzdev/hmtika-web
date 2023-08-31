@@ -15,11 +15,11 @@ export default function dokumentasiKegiatan() {
                 <EventCarousel
                     title={'Workshop SMK Panca Bhakti Rakit 2021 -  HMTIKA Goes TO School'} 
                     slideList={[
-                        { id: 'slide1', imgSrc: 'https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg' },
-                        { id: 'slide2', imgSrc: 'https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg' }
+                        { id: 'slide1', imgSrc: 'https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg', leftBtn: '3', rightBtn: '2' },
+                        { id: 'slide2', imgSrc: 'https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg', leftBtn: '1', rightBtn: '3' },
+                        { id: 'slide3', imgSrc: 'https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg', leftBtn: '2', rightBtn: '1' }
                     ]} />
-                <EventCarousel
-                    title={'Workshop SMK Panca Bhakti Rakit 2021 -  HMTIKA Goes TO School'} />
+                
             </section>
         </Layout>
         </>

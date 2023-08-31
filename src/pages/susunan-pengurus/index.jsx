@@ -54,12 +54,13 @@ export default function susunanPengurus() {
                         ig="Arzika__"
                     />
                     <ProfileBox 
+                        thumb='febiya'
                         name="Febiya Sinta Bella" 
                         position="Bendahara 2" 
                         email="#"
                         linkedIn="#"
                         github="#"
-                        ig="#"
+                        ig="febiya.3gp"
                     />
                     <ProfileBox 
                         thumb='tati-fitriana'
@@ -77,7 +78,7 @@ export default function susunanPengurus() {
                         email="#"
                         linkedIn="#"
                         github="#"
-                        ig="#"
+                        ig="alvin_putra87"
                     />
                     <ProfileBox 
                         thumb='gilang-syakbani'
@@ -95,7 +96,7 @@ export default function susunanPengurus() {
                         email="#"
                         linkedIn="#"
                         github="#"
-                        ig="#"
+                        ig="febri_sarifh"
                     />
                     <ProfileBox 
                         thumb='eka-tresnawati'

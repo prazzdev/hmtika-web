@@ -1,0 +1,28 @@
+import Card from "@/components/Card";
+import Layout from "@/components/Layout";
+
+export default function kegiatanRutin() {
+    return (
+        <>
+        <Layout pageTitle={'Kegiatan Rutin'}>
+            <section className="pt-[100px]">
+                <h1 className="text-xl text-pgray font-bold text-center mb-10">Kegiatan Rutin</h1>
+                <div className="flex flex-col items-center">
+                    <Card
+                        thumbnail="/src/image/event/276106928_279979457493103_4748464840513651431_n.webp"
+                        category="Kegiatan Rutin"
+                        title="Pelatihan Pemrograman Rutin"
+                        description="Pelatihan Pemrograman Rutin setiap jum'at di lab kampus."    
+                    />
+                    <Card
+                        thumbnail="/src/image/event/265643106_286429510167578_9076176840685618495_n.webp"
+                        category="Kegiatan Rutin"
+                        title="Rapat Rutin Pengurus"
+                        description="Rapat rutin pengurus HMTIKA STB dilaksanakan setiap 2 pekan sekali."    
+                    />
+                </div>
+            </section>
+        </Layout>
+        </>
+    )
+}
