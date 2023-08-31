@@ -12,7 +12,7 @@ export default function Header() {
             data-aos-duration="1000"
             data-aos-delay="400"
             data-aos-easing="ease-in-out">
-            <div className="container w-[97%] flex items-center bg-gray-200 mx-auto py-4 mt-1 rounded-lg shadow-lg">
+            <div className="container w-[100%] flex items-center bg-gray-100 mx-auto py-4 shadow-lg -mt-1">
                 <Link href="/"  
                     className="flex items-center mx-auto">
                     <Image 
