@@ -17,23 +17,17 @@ export default function EventList() {
                 title="Pelatihan Pemrograman Rutin"
                 description="Pelatihan Pemrograman Rutin setiap jum'at di lab kampus."    
             />
-            <Card 
-                thumbnail="https://source.unsplash.com/random/300x300/?1"
-                category="Training Programming"
-                title="Pelatihan Pemrograman Rutin"
-                description="Pelatihan Pemrograman Rutin setiap jum'at di lab kampus."    
+            <Card
+                thumbnail="/src/image/event/documentation/IMG-20230831-WA0005.webp"
+                category="HMTIKA Goes To School"
+                title="Introduction to React Native"
+                description="Pengenalan React Native, salah satu bahasa pemrograman pada Android. Di SMK Panca Bhakti Rakit. (2021)"    
             />
             <Card 
-                thumbnail="https://source.unsplash.com/random/300x300/?1"
-                category="Training Programming"
-                title="Pelatihan Pemrograman Rutin"
-                description="Pelatihan Pemrograman Rutin setiap jum'at di lab kampus."    
-            />
-            <Card 
-                thumbnail="https://source.unsplash.com/random/300x300/?1"
-                category="Training Programming"
-                title="Pelatihan Pemrograman Rutin"
-                description="Pelatihan Pemrograman Rutin setiap jum'at di lab kampus."    
+                thumbnail="/src/image/event/documentation/IMG-20230831-WA0004.webp"
+                category="Training"
+                title="Pelatihan Siswa PKL SMK di STIMIK Tunas Bangsa"
+                description="Pelatihan Ms Word, Ms Excel & Ms Power Point di lab kampus."    
             />
         </div>
         </>
