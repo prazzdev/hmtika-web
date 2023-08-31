@@ -15,7 +15,7 @@ export default function susunanPengurus() {
                 <h1 className="text-xl text-pgray font-bold leading-none text-center mb-1 lg:mb-3">
                     Struktur Kepengurusan HMTIKA    
                 </h1>
-                <p className="p-2 text-sm text-sgray font-medium tracking-wider text-center uppercase">Periode 2023/2024</p>
+                <p className="p-2 text-sm text-sgray font-medium tracking-wider text-center uppercase">Periode 2022/2023</p>
                 <div className="flex flex-row flex-wrap justify-center mt-10 lg:mt-20">
                     <ProfileBox 
                         thumb='arrazzaq'
