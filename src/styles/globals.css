@@ -55,8 +55,8 @@ body {
     animation: tambahandivtiga 30s linear infinite;
 }
 #cross2 {
-    bottom: -13%;
-    right: 7%;
+    bottom: -4%;
+    right: 10%;
     display: block;
     position: absolute;
     z-index: 1;

@@ -1,6 +1,5 @@
 import styles from './EventSect.module.css'
 import EventList from "../EventList"
-import Image from 'next/image'
 
 export default function EventSect() {
     return (
@@ -11,8 +10,6 @@ export default function EventSect() {
                 <h1 className="uppercase font-bold text-xl text-gray-100 mx-auto mb-6">Kegiatan</h1>
                 <EventList />
             </div>
-            <Image id='triangle2' src={'/src/image/triangle-teal.svg'} width={120} height={120} />
-            <Image id='triangle1' src={'/src/image/triangle-teal.svg'} width={70} height={70} />
         </section>
         <div className="-mt-1">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00ADB5" fill-opacity="1" d="M0,128L34.3,122.7C68.6,117,137,107,206,112C274.3,117,343,139,411,176C480,213,549,267,617,266.7C685.7,267,754,213,823,181.3C891.4,149,960,139,1029,154.7C1097.1,171,1166,213,1234,213.3C1302.9,213,1371,171,1406,149.3L1440,128L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
