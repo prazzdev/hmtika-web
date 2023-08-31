@@ -3,6 +3,7 @@
 .ProfileSect {
     background-size: fill;
     display: flex;
+    position: relative;
     align-items: center;
     background-color: #eee;
     padding: 100px 0 30px 0;

@@ -46,6 +46,31 @@ body {
   z-index: 99;
 }
 
+#cross1 {
+    top: 10%;
+    left: 7%;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    animation: tambahandivtiga 30s linear infinite;
+}
+#cross2 {
+    bottom: -13%;
+    right: 7%;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    animation: tambahandivtiga 30s linear infinite;
+}
+@keyframes tambahandivtiga {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
 @media(min-width: 1200px) {
   * {
     display: none;

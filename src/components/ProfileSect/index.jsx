@@ -1,4 +1,4 @@
-const logo = '../../src/image/logo.webp';
+import Image from 'next/image'
 import styles from './ProfileSect.module.css'
 
 export default function ProfileSect() { 
@@ -24,6 +24,8 @@ export default function ProfileSect() {
                     </div>
                 </div>
             </div>
+            <Image id='cross1' src={'/src/image/cross-teal.svg'} width={40} height={40} />
+            <Image id='cross2' src={'/src/image/cross-teal.svg'} width={60} height={60} />
         </section>
     )
 }
