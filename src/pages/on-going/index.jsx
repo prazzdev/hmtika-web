@@ -13,7 +13,7 @@ export default function kegiatanOnGoing() {
             >
                 <h1 className="text-xl text-pgray font-bold text-center mb-10">Kegiatan On Going</h1>
                 <div className="px-6 pb-10">
-                    <article class="rounded-xl bg-gray-100 p-5 pt-6 sm:p-6 lg:p-8 shadow-md">
+                    <article class="relative rounded-xl bg-gray-100 p-5 pt-6 sm:p-6 lg:p-8 mb-6 shadow-md overflow-hidden">
                         <div class="flex items-start sm:gap-8">
                             <div
                             class="hidden sm:grid sm:h-20 sm:w-20 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border-2 sm:border-indigo-500"
@@ -61,6 +61,7 @@ export default function kegiatanOnGoing() {
                             </dl>
                             </div>
                         </div>
+                        <span class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"></span>
                     </article>
                 </div>
             </section>
