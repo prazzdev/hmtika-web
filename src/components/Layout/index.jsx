@@ -10,7 +10,6 @@ export default function Layout({ children, pageTitle }) {
     } else {
         title = `${pageTitle} | HMTIKA STB`
     }
-    console.log(title)
     return (
         <>
             <Head>
@@ -22,6 +21,7 @@ export default function Layout({ children, pageTitle }) {
             {children}
             <NavMenu />
             <Footer />
+            <script rc="https://unpkg.com/aos@next/dist/aos.js"></script>
         </>
     )
 }

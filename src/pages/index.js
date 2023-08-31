@@ -6,9 +6,14 @@ import EventSect from '@/components/EventSect'
 export default function Home() {
   return (
     <Layout pageTitle=''>
-      <Hero />
-      <ProfileSect />
-      <EventSect />
+    <div data-aos="fade-in"
+        data-aos-duration="1000"
+        data-aos-delay="300"
+        data-aos-easing="ease-in-out">
+        <Hero />
+        <ProfileSect />
+        <EventSect />
+      </div>
     </Layout>
   )
 }

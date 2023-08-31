@@ -7,7 +7,11 @@ export default function Header() {
     return (
         <>
         <header id="nav"
-            className={styles.nav}>
+            className={styles.nav}
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+            data-aos-easing="ease-in-out">
             <div className="container w-[97%] flex items-center bg-gray-200 mx-auto py-4 mt-1 rounded-lg shadow-lg">
                 <Link href="/"  
                     className="flex items-center mx-auto">

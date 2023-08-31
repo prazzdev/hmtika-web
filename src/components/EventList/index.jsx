@@ -6,6 +6,10 @@ export default function EventList() {
         <div 
             id="container" 
             className="flex justify-around items-center flex-wrap"
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
             >
             <Card
                 thumbnail="/src/image/event/276106928_279979457493103_4748464840513651431_n.webp"
