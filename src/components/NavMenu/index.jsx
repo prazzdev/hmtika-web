@@ -8,7 +8,7 @@ export default function NavMenu() {
         <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
-            <label htmlFor="my-drawer" className="fixed bottom-6 right-7 pbgcolor p-3 rounded-lg shadow-lg drawer-button">
+            <label htmlFor="my-drawer" className="fixed bottom-6 right-7 pbgcolor hover:bg-[#4de4ec] p-3 rounded-lg shadow-lg drawer-button">
                 <Image src={'/src/image/menu.svg'} width={22} height={22} />
             </label>
         </div> 
@@ -16,7 +16,7 @@ export default function NavMenu() {
             <label htmlFor="my-drawer" className="drawer-overlay"></label>
             <ul className="menu fixed bottom-5 p-4 w-50 min-h-[300px] bg-base-20 text-base-content">
             <div className="dropdown dropdown-bottom">
-                <a href="/" className="hover:bg-[#00ADB5] text-gray-700 hover:text-white btn m-1 hover:border-none">Beranda</a>
+                <a href="/" className="bg-white hover:bg-[#00ADB5] text-gray-700 hover:text-white btn m-1 border-1 border-white hover:border-none">Beranda</a>
             </div>
             <NavMenuDropDown 
                 title={'Tentang Kami'} 
