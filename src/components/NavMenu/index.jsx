@@ -14,22 +14,7 @@ export default function NavMenu() {
         </div> 
         <div className="drawer-side">
             <label htmlFor="my-drawer" className="drawer-overlay"></label>
-            <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
-            <div className="container w-[100%] flex items-center mx-auto py-4 mt-1">
-                <Link href="/"  
-                    className="flex items-center mx-auto">
-                    <Image 
-                        src={'/src/image/logo.webp'}
-                        alt="" 
-                        width={40}
-                        height={40}
-                    />
-                    <div class="ml-4">
-                        <h1 className="font-bold text-xs">Himpunan Mahasiswa Informatika</h1>
-                        <h1 className="text-[10px]">STIMIK Tunas Bangsa Banjarnegara</h1>
-                    </div>
-                </Link>
-            </div>
+            <ul className="menu fixed bottom-0 p-4 w-50 min-h-[300px] bg-base-20 text-base-content">
             <div className="dropdown dropdown-bottom">
                 <a href="/" className="btn m-1">Beranda</a>
             </div>

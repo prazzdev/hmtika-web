@@ -18,8 +18,8 @@ export default function Header() {
                         height={40}
                     />
                     <div class="ml-4">
-                        <h1 className="font-bold text-sm">Himpunan Mahasiswa Informatika</h1>
-                        <h1 className="text-xs">STIMIK Tunas Bangsa Banjarnegara</h1>
+                        <h1 className="text-gray-600 font-bold text-sm">Himpunan Mahasiswa Informatika</h1>
+                        <h1 className="text-gray-700 text-xs">STIMIK Tunas Bangsa Banjarnegara</h1>
                     </div>
                 </Link>
             </div>
