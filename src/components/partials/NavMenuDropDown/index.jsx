@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function NavMenuDropDown({ title, menuList }) {
     return (
         <>
@@ -7,7 +9,7 @@ export default function NavMenuDropDown({ title, menuList }) {
             {menuList.map((menu) => {
                 return (
                     <>
-                    <li className="bg-white hover:bg-[#00ADB5] text-gray-700 rounded-lg"><a href={menu.target} className="hover:text-white">{menu.title}</a></li>
+                    <li className="bg-white hover:bg-[#00ADB5] text-gray-700 rounded-lg"><Link href={menu.target} className="hover:text-white">{menu.title}</Link></li>
                     </>    
                 )
             })}
