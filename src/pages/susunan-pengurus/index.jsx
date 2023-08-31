@@ -21,18 +21,18 @@ export default function susunanPengurus() {
                         thumb='arrazzaq'
                         name="Arrazzaq Panca Putra" 
                         position="Leader" 
-                        email="#"
-                        linkedIn="#"
-                        github="#"
-                        ig="#"
+                        email="arrazzaqpancaputra64@gmail.com"
+                        linkedIn="arrazzaq-panca-putra-b94b08211"
+                        github="Arrazzaq123"
+                        ig="arrazzaqpp"
                     />
                     <ProfileBox 
                         thumb='agung'
                         name="Agung Prasetyo" 
                         position="Co-Leader" 
-                        email="mailto:prazzid31@gmail.com"
-                        linkedIn="https://linkedin.com/agungpraz31"
-                        github="https://github.com/prazzdev"
+                        email="prazzid31@gmail.com"
+                        linkedIn="agungpraz31"
+                        github="prazzdev"
                         ig="agungpraz31"
                     />
                     <ProfileBox 
