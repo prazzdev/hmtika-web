@@ -18,6 +18,15 @@ export default function susunanPengurus() {
                 <p className="p-2 text-sm text-sgray font-medium tracking-wider text-center uppercase">Periode 2022/2023</p>
                 <div className="flex flex-row flex-wrap justify-center mt-10 lg:mt-20">
                     <ProfileBox 
+                        thumb='heni-rahmawati'
+                        name="Heni Rahmawati, M. Kom" 
+                        position="Pembina" 
+                        email="heni@stb.ac.id"
+                        linkedIn="#"
+                        github="#"
+                        ig="henina.sa"
+                    />
+                    <ProfileBox 
                         thumb='arrazzaq'
                         name="Arrazzaq Panca Putra" 
                         position="Leader" 
@@ -39,10 +48,10 @@ export default function susunanPengurus() {
                         thumb='arziqa'
                         name="Arziqa Fatimatul Hiyah" 
                         position="Bendahara" 
-                        email="#"
+                        email="arzika1116@gmail.com"
                         linkedIn="#"
                         github="#"
-                        ig="#"
+                        ig="Arzika__"
                     />
                     <ProfileBox 
                         name="Febiya Sinta Bella" 
@@ -56,10 +65,10 @@ export default function susunanPengurus() {
                         thumb='tati-fitriana'
                         name="Tati Fitriana" 
                         position="Sekretaris" 
-                        email="#"
+                        email="tatifa763@gmail.com"
                         linkedIn="#"
                         github="#"
-                        ig="#"
+                        ig="_fiitriana"
                     />
                     <ProfileBox 
                         thumb='alvin'
@@ -71,13 +80,13 @@ export default function susunanPengurus() {
                         ig="#"
                     />
                     <ProfileBox 
-                        thumb='gilang'
+                        thumb='gilang-syakbani'
                         name="Gilang Fajar Syabani" 
                         position="Humas" 
-                        email="#"
+                        email="gilangsyabani1987@gmail.com"
                         linkedIn="#"
                         github="#"
-                        ig="#"
+                        ig="angsstilllearning"
                     />
                     <ProfileBox 
                         thumb='febri-sarif'
@@ -92,10 +101,10 @@ export default function susunanPengurus() {
                         thumb='eka-tresnawati'
                         name="Eka Tresna Wati" 
                         position="Humas 3" 
-                        email="#"
+                        email="ekatresnawati9501@gmail.com"
                         linkedIn="#"
-                        github="#"
-                        ig="#"
+                        github="Ekatresnawati"
+                        ig="eka_tress"
                     />
                     <ProfileBox 
                         thumb='fitri-nf'
@@ -104,7 +113,7 @@ export default function susunanPengurus() {
                         email="#"
                         linkedIn="#"
                         github="#"
-                        ig="#"
+                        ig="ftrinf"
                     />
                     <ProfileBox 
                         thumb='khafid-ilhan'
@@ -119,19 +128,19 @@ export default function susunanPengurus() {
                         thumb='asifa-ahmad'
                         name="Asifa Ahmad" 
                         position="Bidang Keilmuan" 
-                        email="#"
+                        email="almanjiz009@gmail.com"
                         linkedIn="#"
                         github="#"
-                        ig="#"
+                        ig="khafidilhan_"
                     />
                     <ProfileBox 
                         thumb='imam'
                         name="Imam Nur Falah" 
                         position="Bidang Keilmuan (2)" 
-                        email="#"
-                        linkedIn="#"
-                        github="#"
-                        ig="#"
+                        email="falahimamnur@gmail.com"
+                        linkedIn="affalximam"
+                        github="affalximam"
+                        ig="affalximam"
                     />
                 </div>
             </div>
