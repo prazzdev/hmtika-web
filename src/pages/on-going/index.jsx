@@ -37,7 +37,7 @@ export default function kegiatanOnGoing() {
                             <strong
                                 class="rounded border border-teal-400 bg-teal-400 px-3 py-1.5 text-[10px] font-medium text-white"
                             >
-                                Episode #01
+                                Web Programming
                             </strong>
 
                             <h3 class="mt-4 text-lg text-pgray font-medium sm:text-xl">
