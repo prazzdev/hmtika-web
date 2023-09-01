@@ -1,9 +1,9 @@
 import Layout from "@/components/Layout";
 
-export default function kegiatanOnGoing() {
+export default function nextEvent() {
     return (
         <>
-        <Layout pageTitle={'Kegiatan on Going'}>
+        <Layout pageTitle={'Kegiatan yang akan datang'}>
             <section 
                 className="pt-[100px]"
                 data-aos="fade-in"

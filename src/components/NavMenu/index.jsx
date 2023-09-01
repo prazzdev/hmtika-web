@@ -28,7 +28,7 @@ export default function NavMenu() {
                 />
             <NavMenuDropDown 
                 title={'Kegiatan'} 
-                menuList={[{ title: 'Kegiatan Rutin', target: '/kegiatan-rutin' }, { title: 'On Going', target: '/on-going' }, { title: 'Dokumentasi Kegiatan', target: '/dokumentasi-kegiatan' }]}
+                menuList={[{ title: 'Kegiatan Rutin', target: '/kegiatan-rutin' }, { title: 'Next Event', target: '/next-event' }, { title: 'Dokumentasi Kegiatan', target: '/dokumentasi-kegiatan' }]}
                 />
             <NavMenuDropDown 
                 title={'Lain-lain'} 
