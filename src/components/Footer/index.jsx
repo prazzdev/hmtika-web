@@ -7,10 +7,11 @@ export default function Footer() {
     return (
         <footer 
             className="bg-pgray px-4 divide-y"
-            data-aos="fade-in"
-            data-aos-duration="1000"
-            data-aos-delay="300"
-            data-aos-easing="ease-in-out">
+            // data-aos="fade-in"
+            // data-aos-duration="1000"
+            // data-aos-delay="300"
+            // data-aos-easing="ease-in-out"
+        >
             <div className="container flex flex-col justify-between py-6 mx-auto space-b-8 lg:flex-row lg:space-y-0">
                 <div className="lg:w-1/3 hidden lg:inline">
                     <a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start">
@@ -32,6 +33,7 @@ export default function Footer() {
                         <Link href={'/susunan-pengurus'} className="text-xs uppercase text-sgray mb-2">Susunan Pengurus</Link>
                         <Link href={'#'} className="text-xs uppercase text-sgray mb-2">E-Learning</Link>
                         <Link href={'#'} className="text-xs uppercase text-sgray mb-2">Kegiatan Rutin</Link>
+                        <a href={'https://stb.ac.id'} target="_blank" className="text-xs uppercase text-sgray mb-2">STB.AC.ID</a>
                     </div>
                     <div className="space-y-3">
                         <div className="text-pgray uppercase">Social media</div>
