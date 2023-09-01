@@ -69,22 +69,6 @@ export default function dokumentasiKegiatan() {
                             <div id='workshoppbr21-1' className="carousel-item relative w-full">
                                 <img src={dir+'IMG-20230831-WA0007.webp'} className="w-full" />
                                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href='#workshoppbr21-3' className="btn btn-circle">❮</a> 
-                                <a href='#workshoppbr21-2' className="btn btn-circle">❯</a>
-                                </div>
-                            </div>
-                            <div id='workshoppbr21-2' className="carousel-item relative w-full">
-                                <img src='https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg' className="w-full" />
-                                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href='#workshoppbr21-1' className="btn btn-circle">❮</a> 
-                                <a href='#workshoppbr21-3' className="btn btn-circle">❯</a>
-                                </div>
-                            </div>
-                            <div id='workshoppbr21-3' className="carousel-item relative w-full">
-                                <img src='https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg' className="w-full" />
-                                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href='#workshoppbr21-2' className="btn btn-circle">❮</a> 
-                                <a href='#workshoppbr21-1' className="btn btn-circle">❯</a>
                                 </div>
                             </div>
                         </div>

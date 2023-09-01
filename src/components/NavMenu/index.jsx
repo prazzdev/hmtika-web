@@ -14,7 +14,7 @@ export default function NavMenu() {
         </div> 
         <div className="drawer-side">
             <label htmlFor="my-drawer" className="drawer-overlay"></label>
-            <ul className="menu fixed bottom-5 p-4 w-50 min-h-[300px] bg-base-20 text-base-content">
+            <ul className="menu fixed bottom-16 p-4 w-50 min-h-[300px] bg-base-20 text-base-content">
             <div className="dropdown dropdown-bottom">
                 <Link href="/" className="bg-white hover:bg-[#00ADB5] text-gray-700 hover:text-white btn m-1 border-1 border-white hover:border-none">Beranda</Link>
             </div>
@@ -32,7 +32,7 @@ export default function NavMenu() {
                 />
             <NavMenuDropDown 
                 title={'Lain-lain'} 
-                menuList={[{ title: 'Database Anggota', target: '/database-anggota' }, { title: 'Aspirasi Mahasiswa', target: '/aspirasi-mahasiswa' }]}
+                menuList={[{ title: 'Database Anggota', target: '/database-anggota' }, { title: 'Aspirasi Mahasiswa', target: '/aspirasi-mahasiswa' }, { title: 'PDH Prodi', target: '/pdh-prodi' }]}
                 />
             </ul>
         </div>
