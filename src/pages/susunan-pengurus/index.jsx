@@ -39,7 +39,7 @@ export default function susunanPengurus() {
                         thumb='agung'
                         name="Agung Prasetyo" 
                         position="Co-Leader" 
-                        email="prazzid31@gmail.com"
+                        email="agung@prazzdev.com"
                         linkedIn="agungpraz31"
                         github="prazzdev"
                         ig="agungpraz31"
