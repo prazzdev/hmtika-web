@@ -11,7 +11,6 @@ export default function index() {
             pageTitle={'Membangun Digital Nation Indonesia melalui Beasiswa IDCamp 2023'}
             thumbnail={'/src/image/event/BLOG-Launching-Program-IDCamp.webp'}
             date={'12 Sep 2023'}
-            favicon={'/src/image/event/BLOG-Launching-Program-IDCamp.webp'}
             data-aos="fade-in"
             data-aos-duration="1000"
             data-aos-delay="300"
