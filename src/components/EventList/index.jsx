@@ -26,6 +26,7 @@ export default function EventList() {
                 description="Pengenalan React Native, salah satu framework bahasa pemrograman Javascript pada Android. Di SMK Panca Bhakti Rakit. (2021)"    
             />
             <Card 
+                redirectTo={'pelatihan-siswa-pkl'}
                 thumbnail={dir+'IMG-20230831-WA0004.webp'}
                 category="Training"
                 title="Pelatihan Siswa PKL SMK di STIMIK Tunas Bangsa"

@@ -4,7 +4,7 @@ import Card from "../../components/Card"
 export default function Event() {
     return(
         <>
-        <Layout pageTitle="Event">
+        <Layout pageTitle="Beasiswa">
         <div 
             id="container" 
             className="flex justify-around items-center flex-wrap p-4 px-6 lg:p-8 pt-[100px]"
