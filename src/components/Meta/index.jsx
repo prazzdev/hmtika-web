@@ -1,8 +1,7 @@
 import Head from "next/head"
 
 export default function Meta({ pageTitle, thumbnail, favicon }) {
-    console.log(thumbnail)
-    let url = 'https://hmtika.site/'
+    let url = 'https://hmtika.site'
     let title, metaThumb, metaFavicon
     if(pageTitle === '') {
         title = 'Himpunan Mahasiswa Informatika | STIMIK Tunas Bangsa Banjarnegara'
@@ -11,9 +10,9 @@ export default function Meta({ pageTitle, thumbnail, favicon }) {
     }
 
     if(thumbnail === '') {
-        metaThumb = url + 'src/image/logo.webp' 
+        metaThumb = url + '/src/image/logo.webp' 
     } else {
-        metaThumb = thumbnail
+        metaThumb = url + thumbnail
     }
 
     if(favicon === '') {
