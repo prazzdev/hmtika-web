@@ -1,14 +1,14 @@
-import Article from "..";
-import ArOrList from "../format/ArOrList";
-import ArParagraph from "../format/ArParagraph";
-import ArTitle from "../format/ArTitle";
+import Article from "../Article";
+import ArOrList from "../Article/format/ArOrList";
+import ArParagraph from "../Article/format/ArParagraph";
+import ArTitle from "../Article/format/ArTitle";
 
 export default function index() {
     return (
         <>
         <Article 
             pageTitle={'Bangun Masa Depan dengan Beasiswa Developer Handal'}
-            thumbnail={'/src/image/event/BLOG-Launching-Program-IDCamp.webp'}
+            thumbnail={'/src/image/event/devhandal.webp'}
             date={'13 Sep 2023'}>
             <ArTitle text={'Apa itu DeveloperHandal?'} />
             <ArParagraph>
@@ -53,7 +53,7 @@ export default function index() {
             </ArParagraph>
             <ArParagraph>
                 <b>Webinar</b> <br />
-                Webinar DeveloperHandal memberikanmu kesempatan untuk mendapatkan wawasan dan pengetahuan tambahan dari para ahli di bidangnya.
+                Webinar Developer Handal memberikanmu kesempatan untuk mendapatkan wawasan dan pengetahuan tambahan dari para ahli di bidangnya.
             </ArParagraph>
         </Article>
         </>
