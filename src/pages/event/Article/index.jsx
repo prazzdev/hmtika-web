@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Meta from "@/components/Meta";
 import NavMenu from "@/components/NavMenu";
+import PageReadIndicator from "@/components/PageReadIndicator";
 import Image from "next/image";
 
 export default function Article({ pageTitle, thumbnail, date, children }) {
@@ -29,6 +30,7 @@ export default function Article({ pageTitle, thumbnail, date, children }) {
         </section>
         <NavMenu />
         <Footer />
+        <PageReadIndicator />
         <script rc="https://unpkg.com/aos@next/dist/aos.js"></script>
         </>
     )
