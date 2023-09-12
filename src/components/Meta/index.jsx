@@ -1,7 +1,8 @@
 import Head from "next/head"
 
 export default function Meta({ pageTitle, thumbnail, favicon }) {
-    // console.log(thumbnail)
+    console.log(thumbnail)
+    let url = 'https://hmtika.site/'
     let title, metaThumb, metaFavicon
     if(pageTitle === '') {
         title = 'Himpunan Mahasiswa Informatika | STIMIK Tunas Bangsa Banjarnegara'
@@ -10,13 +11,13 @@ export default function Meta({ pageTitle, thumbnail, favicon }) {
     }
 
     if(thumbnail === '') {
-        metaThumb = 'https://hmtika.site/src/image/logo.webp' 
+        metaThumb = url + 'src/image/logo.webp' 
     } else {
         metaThumb = thumbnail
     }
 
     if(favicon === '') {
-        metaFavicon = 'https://hmtika.site/favicon.ico'
+        metaFavicon = url + 'favicon.ico'
     } else {
         favicon = metaFavicon
     }
@@ -32,7 +33,7 @@ export default function Meta({ pageTitle, thumbnail, favicon }) {
             <meta property="og:url" content="https://hmtika.site" />
             <meta property="og:title" content={title} />
             <meta property="og:description" content="Himpunan Mahasiswa Informatika (HMTIKA) merupakan salah satu himpunan bagi mahasiswa jurusan di STIMIK Tunas Bangsa Banjarnegara program studi Informatika." />
-            <meta property="og:image" content='https://hmtika.site/src/image/logo.webp' />
+            <meta property="og:image" content={`${metaThumb}`} />
 
             <meta property="twitter:card" content="summary_large_image" />
             <meta property="twitter:url" content="https://hmtika.site" />
