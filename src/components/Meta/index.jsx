@@ -1,7 +1,6 @@
 import Head from "next/head"
 
 export default function Meta({ pageTitle, thumbnail, favicon }) {
-    console.log(pageTitle)
     let title, metaThumb, metaFavicon
     if(pageTitle === '') {
         title = 'Himpunan Mahasiswa Informatika | STIMIK Tunas Bangsa Banjarnegara'
