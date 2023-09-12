@@ -1,10 +1,9 @@
 import Link from "next/link"
 
 export default function Card({ redirectTo, thumbnail, category, title, description }) {
-    console.log(redirectTo)
     let target
     if(redirectTo == undefined) {
-        target = '#'
+        target = ''
     } else {
         target = redirectTo
     }
@@ -17,7 +16,7 @@ export default function Card({ redirectTo, thumbnail, category, title, descripti
                 <span className="block text-xs text-pteal font-bold tracking-widest uppercase mb-1">{category}</span>
                 <h2 className="text-xl text-pgray font-semibold tracking-wide">{title}</h2>
             </div>
-            <p className="text-sm text-sgray">
+            <p className="text-sm text-sgray text-justify">
                 {description}
             </p>
         </Link>

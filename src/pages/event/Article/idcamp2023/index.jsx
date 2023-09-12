@@ -1,7 +1,7 @@
 import Article from "..";
-import ArParagraph from "../ArParagraph";
-import ArTitle from "../ArTitle";
-import ArOrList from "../ArOrList";
+import ArParagraph from "../format/ArParagraph";
+import ArTitle from "../format/ArTitle";
+import ArOrList from "../format/ArOrList";
 
 export default function index() {
     return (
@@ -9,11 +9,7 @@ export default function index() {
         <Article 
             pageTitle={'Membangun Digital Nation Indonesia melalui Beasiswa IDCamp 2023'}
             thumbnail={'/src/image/event/BLOG-Launching-Program-IDCamp.webp'}
-            date={'12 Sep 2023'}
-            data-aos="fade-in"
-            data-aos-duration="1000"
-            data-aos-delay="300"
-            data-aos-easing="ease-in-out">
+            date={'12 Sep 2023'}>
             {/* main article */}
             <ArParagraph>
                 Indonesia, dengan populasi lebih dari 270 juta orang, telah menjadi salah satu pasar digital terbesar di dunia. Pertumbuhan ekonomi digital yang pesat dan perubahan gaya hidup masyarakat Indonesia telah menciptakan permintaan yang tinggi akan talenta digital. Dalam era ini, kemampuan untuk menguasai teknologi, terutama dalam hal pemrograman dan pengembangan aplikasi, adalah suatu keharusan.
@@ -73,7 +69,7 @@ export default function index() {
                 Program Beasiswa IDCamp 2023 terbuka untuk seluruh Warga Negara Indonesia (WNI) tanpa dipungut biaya apapun (GRATIS). Periode pendaftaran dibuka dari 11 September hingga 24 November 2023.
             </ArParagraph>
             <ArParagraph>
-                Daftar sekarang juga melalui: <a href="https://www.idcamp.ioh.co.id" className="underline text-blue-500">idcamp.ioh.co.id</a>
+                Daftar sekarang juga melalui: <a href="https://idcamp.ioh.co.id" className="underline text-blue-500">idcamp.ioh.co.id</a>
             </ArParagraph>
             <ArParagraph>
                 Yuk, jadilah bagian dari perubahan! Bergabunglah dengan IDCamp dan bantu membangun Indonesia sebagai Digital Nation. Bersama-sama, kita dapat menciptakan masa depan yang cerah dalam dunia digital.

@@ -14,6 +14,13 @@ export default function Event() {
             data-aos-easing="ease-in-out"
             >
             <Card 
+                redirectTo={'/event/devhandal2023'}
+                thumbnail="/src/image/event/devhandal.webp"
+                category="Program Beasiswa"
+                title="Bangun Masa Depan dengan Beasiswa Developer Handal"
+                description="Beasiswa belajar coding selama 1 tahun dan sertifikasi developer internasional. Bangun karir impianmu sebagai JavaScript Developer Expert yang kompeten dan handal."    
+            />
+            <Card 
                 redirectTo={'/event/idcamp2023'}
                 thumbnail="/src/image/event/BLOG-Launching-Program-IDCamp.webp"
                 category="Program Beasiswa"
