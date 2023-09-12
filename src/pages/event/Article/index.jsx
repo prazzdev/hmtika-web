@@ -4,11 +4,11 @@ import Meta from "@/components/Meta";
 import NavMenu from "@/components/NavMenu";
 import Image from "next/image";
 
-export default function Article({ pageTitle, thumbnail, date, children }) {
+export default function Article({ favicon, pageTitle, thumbnail, date, children }) {
     console.log(pageTitle)
     return (
         <>
-        <Meta pageTitle={pageTitle} />
+        <Meta pageTitle={pageTitle} favicon={favicon} />
         <Header />
         <section 
             className="article p-4 px-6 pt-[100px]"
