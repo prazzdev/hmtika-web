@@ -1,6 +1,6 @@
 import Head from "next/head"
 
-export default function Meta({ pageTitle, thumbnail, favicon }) {
+export default function Meta({ pageTitle, thumbnail, metaFavicon }) {
     console.log(pageTitle)
     let title, metaThumb, metaFavicon
     if(pageTitle === '') {
