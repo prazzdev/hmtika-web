@@ -1,7 +1,7 @@
-import Article from "..";
-import ArParagraph from "../format/ArParagraph";
-import ArTitle from "../format/ArTitle";
-import ArOrList from "../format/ArOrList";
+import Article from "../Article";
+import ArParagraph from "../Article/format/ArParagraph";
+import ArTitle from "../Article/format/ArTitle";
+import ArOrList from "../Article/format/ArOrList";
 
 export default function index() {
     return (
