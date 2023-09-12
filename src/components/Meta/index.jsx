@@ -39,7 +39,7 @@ export default function Meta({ pageTitle, thumbnail, favicon }) {
             <meta property="twitter:title" content={title} />
             <meta property="twitter:description" content="Himpunan Mahasiswa Informatika (HMTIKA) merupakan salah satu himpunan bagi mahasiswa jurusan di STIMIK Tunas Bangsa Banjarnegara program studi Informatika." />
             <meta property="twitter:image" content={metaThumb} />
-            <link rel="icon" href={metaFavicon} />
+            <link rel="shortcut icon" href={metaFavicon} />
             <title>{title}</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Head>
