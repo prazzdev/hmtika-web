@@ -14,6 +14,7 @@ export default function Event() {
             data-aos-easing="ease-in-out"
             >
             <Card 
+                redirectTo={'/event/idcamp2023'}
                 thumbnail="/src/image/event/BLOG-Launching-Program-IDCamp.webp"
                 category="Program Beasiswa"
                 title="IDCamp 2023"

@@ -1,10 +1,16 @@
 import Link from "next/link"
 
-export default function Card(props) {
-    const { thumbnail, category, title, description } = props
+export default function Card({ redirectTo, thumbnail, category, title, description }) {
+    console.log(redirectTo)
+    let target
+    if(redirectTo == undefined) {
+        target = '#'
+    } else {
+        target = redirectTo
+    }
     return (
         <Link 
-            href={'/event/idcamp2023'}
+            href={target}
              className="p-6 rounded-lg shadow-md bg-gray-200 text-gray-800 mb-8">
             <img src={thumbnail} alt="" className="object-cover object-center w-full rounded-md h-[180px]" />
             <div className="mt-6 mb-2">

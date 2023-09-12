@@ -1,8 +1,7 @@
-import Image from "next/image";
-import Article from "../Article";
-import ArParagraph from "../Article/ArParagraph";
-import ArTitle from "../Article/ArTitle";
-import ArOrList from "../Article/ArOrList";
+import Article from "..";
+import ArParagraph from "../ArParagraph";
+import ArTitle from "../ArTitle";
+import ArOrList from "../ArOrList";
 
 export default function index() {
     return (

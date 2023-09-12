@@ -6,7 +6,8 @@ export default function EventList() {
         <>
         <div 
             id="container" 
-            className="flex justify-around items-center flex-wrap z-10"
+            // className="flex justify-around items-center flex-wrap z-10"
+            className="flex justify-around items-center flex-wrap p-4 px-6"
             data-aos="fade-in"
             data-aos-duration="1000"
             data-aos-delay="300"
