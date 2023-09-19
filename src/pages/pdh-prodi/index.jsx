@@ -13,7 +13,7 @@ export default function pdhProdi() {
                     data-aos-easing="ease-in-out"
                 >
                 <h1 className="text-xl text-pgray font-bold text-center mb-10">Pakaian Dinas Harian (PDH) Prodi</h1>
-                <Image src={'/src/image/pdh.webp'} height={300} width={300} className="mx-auto shadow-md" />
+                <Image src={'/src/image/pdh-hmtika.webp'} height={300} width={300} className="mx-auto shadow-md" />
             </section>
         </Layout>
         </>
