@@ -43,6 +43,7 @@ export default function susunanPengurus() {
                         linkedIn="agungpraz31"
                         github="prazzdev"
                         ig="agungpraz31"
+                        web="https://prazzdev.com"
                     />
                     <ProfileBox 
                         thumb='arziqa'
@@ -142,6 +143,7 @@ export default function susunanPengurus() {
                         linkedIn="affalximam"
                         github="affalximam"
                         ig="affalximam"
+                        web="https://affalximam.my.id"
                     />
                 </div>
             </div>
