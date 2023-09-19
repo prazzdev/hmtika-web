@@ -15,8 +15,6 @@ export default function index() {
                 <h1 className="text-xl text-pgray font-bold text-center mb-10">Sponsorship</h1>
                 <SponsorCard 
                     name="MJS Project Apparel" thumbnail="/src/image/mjs-project-apparel.webp" />
-                <SponsorCard 
-                    name="MJS Project Apparel" thumbnail="/src/image/mjs-project-apparel.webp" />
             </section>
         </Layout>
         </>
