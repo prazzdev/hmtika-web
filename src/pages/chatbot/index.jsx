@@ -18,14 +18,14 @@ export default function index() {
         <Layout pageTitle="Chatbot">
             <section 
                 id="chatbot"
-                className="py-[120px]">
+                className="w-full py-[120px] flex flex-col justify-center">
                 <div className="chat chat-start">
                     <div className="chat-bubble">{keyword}</div>
                 </div>
                 <input 
                     name="keyword" 
                     type="text" placeholder="Masukkan kata kunci" 
-                    className="input input-bordered w-full max-w-xs"
+                    className="input input-bordered w-full max-w-xs mx-auto mt-10"
                     onChange={({ target }) => search(target.value)} />
             </section>
         </Layout>
