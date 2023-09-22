@@ -32,7 +32,7 @@ export default function NavMenu() {
                 />
             <NavMenuDropDown 
                 title={'Lain-lain'} 
-                menuList={[{ title: 'Database Anggota', target: '/database-anggota' }, { title: 'Aspirasi Mahasiswa', target: '/aspirasi-mahasiswa' }, { title: 'PDH Prodi', target: '/pdh-prodi' }, { title: 'Sponsorship', target: '/sponsorship' }]}
+                menuList={[{ title: 'Database Anggota', target: '/database-anggota' }, { title: 'Aspirasi Mahasiswa', target: '/aspirasi-mahasiswa' }, { title: 'PDH Prodi', target: '/pdh-prodi' }, { title: 'Sponsorship', target: '/sponsorship' }, { title: 'Chatbot', target: '/chatbot' }]}
                 />
             </ul>
         </div>
