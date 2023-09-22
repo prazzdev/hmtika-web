@@ -19,10 +19,13 @@ export default function index() {
             <section 
                 id="chatbot"
                 className="py-[120px]">
-                <p>{keyword}</p>
+                <div className="chat chat-start">
+                    <div className="chat-bubble">{keyword}</div>
+                </div>
                 <input 
                     name="keyword" 
-                    placeholder="masukkan kata kunci"
+                    type="text" placeholder="Masukkan kata kunci" 
+                    className="input input-bordered w-full max-w-xs"
                     onChange={({ target }) => search(target.value)} />
             </section>
         </Layout>
