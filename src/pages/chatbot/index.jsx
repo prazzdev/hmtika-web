@@ -4,7 +4,7 @@ import { useState } from "react"
 let _url = 'https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText?key=AIzaSyBvQ8j8TDPTTqnRU7pgQZeDeqfFSLjFniA'
 
 export default function index() {
-    const [keyword, setKeyword] = useState('. . .')
+    const [keyword, setKeyword] = useState('')
     const [response, setResponse] = useState('Ada yang bisa saya bantu?')
     const [keywordOnResponse, setKeywordOnResponse] =  useState('')
     // console.log(keyword)
@@ -47,7 +47,7 @@ export default function index() {
                     <input 
                         name="keyword" 
                         value={keyword}
-                        type="text" placeholder="Tulis pertanyaan" 
+                        type="text" placeholder="Tulis pertanyaan"
                         className="input input-bordered w-[70%] mr-3"
                         onChange={({ target }) => search(target.value)} 
                         />
