@@ -47,7 +47,7 @@ export default function index() {
                     <input 
                         name="keyword" 
                         value={keyword}
-                        type="text" placeholder="Masukkan kata kunci" 
+                        type="text" placeholder="Tulis pertanyaan" 
                         className="input input-bordered w-[70%] mr-3"
                         onChange={({ target }) => search(target.value)} 
                         />
