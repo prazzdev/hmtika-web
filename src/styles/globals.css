@@ -2,13 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-*, html {
+*,
+html {
   scroll-behavior: smooth;
 }
 
 @font-face {
   font-family: "Poppins";
   src: url(./../../public/src/font/Poppins.ttf);
+}
+
+.font-poppins {
+  font-family: "Poppins";
 }
 
 body {
@@ -21,10 +26,10 @@ body {
   background-color: #eee;
 }
 .bg-pteal {
-  background-color: #00ADB5;
+  background-color: #00adb5;
 }
 .pbgcolor {
-  background-color: #00ADB5;
+  background-color: #00adb5;
 }
 .text-pgray {
   color: rgb(75 85 99);
@@ -33,7 +38,7 @@ body {
   color: rgb(107 114 128);
 }
 .text-pteal {
-  color: #00ADB5;
+  color: #00adb5;
 }
 .typText {
   text-shadow: 2px 2px 3px #000;
@@ -47,36 +52,36 @@ body {
 }
 
 #cross1 {
-    top: 10%;
-    left: 7%;
-    display: block;
-    position: absolute;
-    z-index: 1;
-    animation: tambahandivtiga 30s linear infinite;
+  top: 10%;
+  left: 7%;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  animation: tambahandivtiga 30s linear infinite;
 }
 #cross2 {
-    bottom: -4%;
-    right: 10%;
-    display: block;
-    position: absolute;
-    z-index: 1;
-    animation: tambahandivtiga 30s linear infinite;
+  bottom: -4%;
+  right: 10%;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  animation: tambahandivtiga 30s linear infinite;
 }
 #triangle1 {
-    bottom: -2%;
-    right: 6%;
-    display: block;
-    position: absolute;
-    z-index: 1;
-    animation: tambahandivtiga 30s linear infinite;
+  bottom: -2%;
+  right: 6%;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  animation: tambahandivtiga 30s linear infinite;
 }
 #triangle2 {
-    bottom: 60%;
-    left: -10%;
-    display: block;
-    position: absolute;
-    z-index: 1;
-    animation: tambahandivtiga 30s linear infinite;
+  bottom: 60%;
+  left: -10%;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  animation: tambahandivtiga 30s linear infinite;
 }
 
 @keyframes tambahandivtiga {
@@ -84,12 +89,12 @@ body {
     transform: rotate(0);
   }
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   * {
-    display: none;
+    /* display: none; */
   }
 }
