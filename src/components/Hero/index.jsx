@@ -2,12 +2,13 @@ const arrowDown = "../../src/image/arrow-down.svg";
 import Image from "next/image";
 import HyperText from "../magicui/hyper-text";
 import WordPullUp from "../magicui/word-pull-up";
+import BoxReveal from "../magicui/box-reveal";
 
 export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex flex-col justify-end items-center bg-blue-400 pt-0 lg:pt-[6em] pb-0 lg:pb-[3em] min-h-[340px] lg:min-h-[100svh]"
+      className="relative lg:flex flex-col justify-center lg:justify-end items-center pt-0 lg:pt-[6em] pb-0 lg:pb-[3em] min-h-[340px] lg:min-h-[100svh]"
     >
       <Image
         src="/src/image/hero.webp"
