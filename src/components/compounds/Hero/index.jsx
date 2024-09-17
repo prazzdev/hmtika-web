@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative lg:flex flex-col justify-center items-center pt-0 lg:pt-[6em] pb-0 lg:pb-[3em] min-h-[340px] lg:min-h-[100svh] overflow-hidden"
+      className="relative flex flex-col justify-center items-center mt-[4em] lg:mt-0 pt- lg:pt-[6em] pb-0 lg:pb-[3em] min-h-[340px] lg:min-h-[100svh] overflow-hidden"
     >
       <Image
         src="/src/image/hero.webp"
@@ -14,10 +14,10 @@ export default function Hero() {
         height={3000}
         className="top-0 right-0 bottom-0 left-0 absolute blur-xs min-w-full lg:min-w-[100svw] min-h-[360px] lg:min-h-[100svh] filter hero-image"
       />
-      <div className="top- right-0 bottom-0 left-0 z-10 absolute flex lg:flex-row flex-col justify-center lg:items-center place-items-start lg:gap-[10em] bg-[rgba(0,0,0,0.6)] px-[5em] lg:px-[6em] p-[5em] min-w-[100svw] min-h-[100svh] overflow-hidden">
+      <div className="top-0 right-0 bottom-0 left-0 z-10 absolute flex lg:flex-row flex-col justify-center lg:items-center place-items-start lg:gap-[10em] bg-[rgba(0,0,0,0.6)] px-[2em] lg:px-[6em] lg:p-[5em] min-w-[100svw] lg:min-h-[100svh] overflow-hidden">
         <div className="flex flex-col">
           <BoxReveal boxColor={"#00adb5"} duration={0.5}>
-            <p className="font-semibold text-[3.5rem] text-white lg:text-[3.7rem]">
+            <p className="font-semibold text-[2rem] text-white lg:text-[3.7rem]">
               Selamat Datang<span className="text-[#00adb5]">.</span>
             </p>
           </BoxReveal>
@@ -49,15 +49,15 @@ export default function Hero() {
             />
           </div>
         </BoxReveal>
+        <a
+          href="#ProfileSect"
+          className="z-10 lg:hidden bg-[#00ADB5] shadow-md mx-auto mt-6 p-2 rounded-lg"
+          data-aos="flip-up"
+          data-aos-delay="1000"
+        >
+          <img src={arrowDown} alt="direct to down" className="w-4 lg:w-6" />
+        </a>
       </div>
-      <a
-        href="#ProfileSect"
-        className="lg:hidden bg-[#00ADB5] shadow-md p-2 rounded-lg"
-        data-aos="flip-up"
-        data-aos-delay="1000"
-      >
-        <img src={arrowDown} alt="direct to down" className="w-4 lg:w-6" />
-      </a>
     </section>
   );
 }
