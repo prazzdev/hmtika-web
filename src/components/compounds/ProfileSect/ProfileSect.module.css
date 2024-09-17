@@ -11,7 +11,7 @@
 
 .logo {
   /* rounded-lg dark:bg-gray-500 sm:min-h-96 */
-  background-image: url("../../../public/src/image/logo.webp");
+  background-image: url("/public/src/image/logo.webp");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 100%;
