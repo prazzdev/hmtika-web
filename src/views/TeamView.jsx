@@ -17,7 +17,7 @@ const TeamView = () => {
             Struktur Kepengurusan HMTIKA
           </h1>
           <p className="p-2 font-medium text-center text-sgray text-sm uppercase tracking-wider">
-            Periode 2022/2023
+            Periode 2023/2024
           </p>
           <div className="flex flex-row flex-wrap justify-center mt-10 lg:mt-20">
             {teamData &&

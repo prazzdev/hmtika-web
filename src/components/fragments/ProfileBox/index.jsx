@@ -5,8 +5,7 @@ import {
   FaLinkedinIn,
   FaRegEnvelope,
 } from "react-icons/fa6";
-import { TfiWorld } from "react-icons/tfi";
-import { BsEnvelopeAt, BsGlobe, BsInstagram } from "react-icons/bs";
+import { BsGlobe, BsInstagram } from "react-icons/bs";
 
 const ProfileBox = ({
   thumb = "default",
@@ -23,7 +22,7 @@ const ProfileBox = ({
       <img
         alt=""
         className="flex-shrink-0 dark:bg-gray-500 bg-cover bg-center -mt-12 rounded-full w-24 h-24 self-center"
-        src={"/src/image/team/" + thumb + ".webp"}
+        src={process.env.NEXT_PUBLIC_FIREBASE_TEAM_PROFILE_URL + thumb}
       />
       <div className="flex-1 my-4">
         <p className="font-semibold text-pgray text-xl leading-snug">{name}</p>
