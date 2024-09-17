@@ -3,7 +3,7 @@ import styles from "./ProfileSect.module.css";
 export default function ProfileSect() {
   return (
     <section
-      id="ProfileSect"
+      id="profile"
       className={`${styles.ProfileSect} flex lg:hidden lg:px-[10em] py-8 lg:py-[6em] lg:pb-[2em]`}
     >
       <div className="flex flex-col bg-pgray mx-auto def-container">

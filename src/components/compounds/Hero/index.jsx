@@ -50,7 +50,7 @@ export default function Hero() {
           </div>
         </BoxReveal>
         <a
-          href="#ProfileSect"
+          href="#profile"
           className="z-10 lg:hidden bg-[#00ADB5] shadow-md mx-auto mt-6 p-2 rounded-lg"
           data-aos="flip-up"
           data-aos-delay="1000"

@@ -40,7 +40,7 @@ const HomeView = () => {
           </div>
         </section>
         <section
-          id="EventSect"
+          id="NewsSect"
           className="relative bg-[#00ADB5] -mt-[2px] px-0 pt-[40px] pb-[10px] w-[100%]"
         >
           <div className="flex flex-col mx-auto lg:px-[10em]">
