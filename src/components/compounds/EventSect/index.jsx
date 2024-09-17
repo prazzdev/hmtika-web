@@ -4,16 +4,20 @@ import EventList from "../EventList";
 export default function EventSect() {
   return (
     <>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        className="lg:min-w-[100svw] overflow-hidden"
+      >
         <path
           fill="#00ADB5"
           fill-opacity="1"
           d="M0,32L60,74.7C120,117,240,203,360,208C480,213,600,139,720,138.7C840,139,960,213,1080,202.7C1200,192,1320,96,1380,48L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
         ></path>
       </svg>
-      <section id="EventSect" className={styles.EventSect}>
-        <div className="flex flex-col mx-auto container">
-          <h1 className="mx-auto mb-6 font-bold text-gray-100 text-xl uppercase">
+      <section id="EventSect" className={`${styles.EventSect}`}>
+        <div className="flex flex-col mx-auto lg:px-[10em]">
+          <h1 className="mx-auto mb-6 font-bold text-gray-100 text-xl lg:text-2xl uppercase">
             Kegiatan
           </h1>
           <EventList />

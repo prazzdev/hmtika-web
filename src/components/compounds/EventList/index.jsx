@@ -6,12 +6,11 @@ export default function EventList() {
     <>
       <div
         id="container"
-        // className="z-10 flex flex-wrap justify-around items-center"
-        className="flex flex-wrap justify-around items-center px-6 p-4"
-        data-aos="fade-in"
-        data-aos-duration="1000"
-        data-aos-delay="300"
-        data-aos-easing="ease-in-out"
+        className="flex lg:flex-row flex-col flex-wrap lg:justify-center items-center lg:gap-10 px-6 p-4"
+        // data-aos="fade-in"
+        // data-aos-duration="1000"
+        // data-aos-delay="300"
+        // data-aos-easing="ease-in-out"
       >
         <Card
           thumbnail={
