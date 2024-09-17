@@ -1,4 +1,3 @@
-import { BorderBeam } from "@/components/magicui/border-beam";
 import Link from "next/link";
 
 export default function Card({
@@ -33,7 +32,6 @@ export default function Card({
         </h2>
       </div>
       <p className="text-justify text-sgray text-sm">{description}</p>
-      <BorderBeam size={250} duration={12} delay={9} />
     </Link>
   );
 }
