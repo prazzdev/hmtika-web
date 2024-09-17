@@ -1,6 +1,7 @@
 import Image from "next/image";
 import NavMenuDropDown from "../../fragments/NavMenuDropDown";
 import Link from "next/link";
+import menuData from "@/lib/data/menuData";
 
 export default function NavMenu() {
   return (
@@ -17,56 +18,51 @@ export default function NavMenu() {
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
-          <ul className="bottom-[130px] fixed bg-base-20 p-4 w-50 min-h-[300px] text-base-content menu">
-            <div className="dropdown-bottom dropdown">
-              <Link
-                href="/"
-                className="border-1 border-white bg-white hover:bg-[#00ADB5] m-1 hover:border-none text-gray-700 hover:text-white btn"
-              >
-                Beranda
-              </Link>
-            </div>
-            <NavMenuDropDown
-              key={1}
-              title={"Tentang Kami"}
-              menuList={[
-                { title: "Visi Misi", target: "/visi-misi" },
-                { title: "Susunan Pengurus", target: "/susunan-pengurus" },
-              ]}
-            />
-            <NavMenuDropDown
-              key={2}
-              title={"Akademik"}
-              menuList={[
-                { title: "Buku Modul", target: "/buku-modul" },
-                { title: "E-Learning", target: "/e-learning" },
-              ]}
-            />
-            <NavMenuDropDown
-              key={3}
-              title={"Kegiatan"}
-              menuList={[
-                { title: "Beasiswa", target: "/event" },
-                { title: "Kegiatan Rutin", target: "/kegiatan-rutin" },
-                { title: "Next Event", target: "/next-event" },
-                {
-                  title: "Dokumentasi Kegiatan",
-                  target: "/dokumentasi-kegiatan",
-                },
-              ]}
-            />
-            <NavMenuDropDown
-              key={4}
-              title={"Lain-lain"}
-              menuList={[
-                { title: "Database Anggota", target: "/database-anggota" },
-                { title: "Aspirasi Mahasiswa", target: "/aspirasi-mahasiswa" },
-                { title: "PDH Prodi", target: "/pdh-prodi" },
-                { title: "Sponsorship", target: "/sponsorship" },
-                { title: "Chatbot", target: "/chatbot" },
-              ]}
-            />
-          </ul>
+          <div className="bottom-[130px] fixed bg-base-20 p-4 w-50 min-h-[300px] text-base-content menu">
+            {menuData.map((menu, i) => (
+              <div className="dropdown-right dropdown">
+                {menu.child ? (
+                  <>
+                    <label
+                      tabIndex={0}
+                      className="border-1 border-white bg-white hover:bg-[#00ADB5] m-1 hover:border-none text-gray-700 hover:text-white btn"
+                    >
+                      {menu.name}
+                    </label>
+                    <ul
+                      tabIndex={0}
+                      className="z-[1] bg-white shadow-lg p-2 rounded-box w-52 dropdown-content menu"
+                    >
+                      {menu.child.map((subMenu, i) => {
+                        return (
+                          <>
+                            <li
+                              key={i}
+                              className="bg-white hover:bg-[#00ADB5] rounded-lg text-gray-700"
+                            >
+                              <Link
+                                href={subMenu.path}
+                                className="hover:text-white"
+                              >
+                                {subMenu.name}
+                              </Link>
+                            </li>
+                          </>
+                        );
+                      })}
+                    </ul>
+                  </>
+                ) : (
+                  <Link
+                    href="/"
+                    className="border-1 border-white bg-white hover:bg-[#00ADB5] m-1 hover:border-none text-gray-700 hover:text-white btn"
+                  >
+                    Beranda
+                  </Link>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>

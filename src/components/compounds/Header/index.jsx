@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import menuData from "@/lib/data/menuData";
 
 export default function Header() {
-  const [menus, setMenus] = useState([]);
   const [scrollingDown, setScrollingDown] = useState(false);
   let lastScrollTop = 0;
 
@@ -62,105 +61,6 @@ export default function Header() {
           </Link>
         </div>
         <div className="lg:flex items-center hidden -mt-1 py-4 lg:py-5 text-gray-600">
-          {/* <ul className="menu lg:menu-horizontal bg-gray-100">
-            <li>
-              <Link href="/">Beranda</Link>
-            </li>
-            <li>
-              <details>
-                <summary>Tentang Kami</summary>
-                <ul className="bg-gray-100 rounded-lg min-w-[11svw]">
-                  <li>
-                    <a className="px-2">Visi Misi</a>
-                  </li>
-                  <li>
-                    <a className="px-2">Kandidat</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <details>
-                <summary>Akademik</summary>
-                <ul className="bg-gray-100 rounded-lg min-w-[11svw]">
-                  <li>
-                    <Link href="/buku-modul" className="px-2">
-                      Buku Modul
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/buku-modul" className="px-2">
-                      E-Learning
-                    </Link>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <details>
-                <summary>Kegiatan</summary>
-                <ul className="bg-gray-100 rounded-lg min-w-[11svw]">
-                  <li>
-                    <Link href="/beasiswa" className="px-2">
-                      Beasiswa
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/kegiatan-rutin" className="px-2">
-                      Kegiatan Rutin
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/next-event" className="px-2">
-                      Next Event
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/beasiswa" className="px-2">
-                      Beasiswa
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/dokumentasi-kegiatan" className="px-2">
-                      Dokumentasi Kegiatan
-                    </Link>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <details>
-                <summary>Lain-lain</summary>
-                <ul className="bg-gray-100 rounded-lg min-w-[11svw]">
-                  <li>
-                    <Link href="/database-anggota" className="px-2">
-                      Database Anggota
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/aspirasi-mahasiswa" className="px-2">
-                      Aspirasi Mahasiswa
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/pdh-prodi" className="px-2">
-                      PDH Prodi
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/sponsorship" className="px-2">
-                      Sponsorship
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/chatbot" className="px-2">
-                      Chatbot
-                    </Link>
-                  </li>
-                </ul>
-              </details>
-            </li>
-          </ul> */}
           <ul className="menu lg:menu-horizontal bg-gray-100">
             {menuData.map((menu, i) => (
               <li key={i}>
