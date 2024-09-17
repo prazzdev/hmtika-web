@@ -9,11 +9,11 @@ const menuData = [
     child: [
       {
         name: "Visi Misi",
-        path: "/visi-misi",
+        path: "/about/visi-misi",
       },
       {
         name: "Kandidat",
-        path: "/team",
+        path: "/about/team",
       },
     ],
   },
@@ -23,11 +23,11 @@ const menuData = [
     child: [
       {
         name: "Buku Modul",
-        path: "/buku-modul",
+        path: "/academic/buku-modul",
       },
       {
         name: "E-Learning",
-        path: "/e-learning",
+        path: "/academic/e-learning",
       },
     ],
   },
@@ -37,19 +37,19 @@ const menuData = [
     child: [
       {
         name: "Beasiswa",
-        path: "/beasiswa",
+        path: "/event/beasiswa",
       },
       {
         name: "Kegiatan Rutin",
-        path: "/kegiatan-rutin",
+        path: "/event/kegiatan-rutin",
       },
       {
         name: "Next Event",
-        path: "/next-event",
+        path: "/event/next-event",
       },
       {
         name: "Dokumentasi Kegiatan",
-        path: "/dokumentasi-kegiatan",
+        path: "/event/dokumentasi-kegiatan",
       },
     ],
   },
@@ -59,23 +59,23 @@ const menuData = [
     child: [
       {
         name: "Database Anggota",
-        path: "/database-anggota",
+        path: "/other/database-anggota",
       },
       {
         name: "Aspirasi Mahasiswa",
-        path: "/aspirasi-mahasiswa",
+        path: "/other/aspirasi-mahasiswa",
       },
       {
         name: "PDH Prodi",
-        path: "/pdh-prodi",
+        path: "/other/pdh-prodi",
       },
       {
         name: "Sponsorship",
-        path: "/sponsorship",
+        path: "/other/sponsorship",
       },
       {
         name: "Chatbot",
-        path: "/chatbot",
+        path: "/other/chatbot",
       },
     ],
   },
