@@ -24,7 +24,7 @@ export default function EventList() {
           thumbnail={dir + "IMG-20230831-WA0005.webp"}
           category="HMTIKA Goes To School"
           title="Introduction to React Native"
-          description="Pengenalan React Native, salah satu framework bahasa pemrograman Javascript pada Android. Di SMK Panca Bhakti Rakit. (2021)"
+          description="Pengenalan React Native, salah satu framework bahasa pemrograman Javascript pada Android."
         />
         <Card
           redirectTo={"pelatihan-siswa-pkl"}

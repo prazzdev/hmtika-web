@@ -1,3 +1,4 @@
+import { BorderBeam } from "@/components/magicui/border-beam";
 import Link from "next/link";
 
 export default function Card({
@@ -16,7 +17,7 @@ export default function Card({
   return (
     <Link
       href={target}
-      className="bg-gray-200 shadow-md mb-8 p-6 rounded-lg lg:min-w-[20svw] lg:max-w-[20svw] lg:min-h-[60svh] text-gray-800"
+      className="relative bg-gray-200 shadow-md mb-8 p-6 rounded-lg lg:min-w-[20svw] lg:max-w-[20svw] lg:min-h-[54svh] text-gray-800"
     >
       <img
         src={thumbnail}
@@ -32,6 +33,7 @@ export default function Card({
         </h2>
       </div>
       <p className="text-justify text-sgray text-sm">{description}</p>
+      <BorderBeam size={250} duration={12} delay={9} />
     </Link>
   );
 }
