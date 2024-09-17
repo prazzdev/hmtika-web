@@ -1,9 +1,9 @@
-import Layout from "@/components/Layout";
 import ProfileBox from "@/components/fragments/ProfileBox";
+import MainLayout from "@/layouts/MainLayout";
 
 export default function susunanPengurus() {
   return (
-    <Layout pageTitle="Susunan Pengurus">
+    <MainLayout pageTitle="Susunan Pengurus">
       <section
         className="bg-pgray mt-16 py-6"
         data-aos="fade-in"
@@ -150,6 +150,6 @@ export default function susunanPengurus() {
           </div>
         </div>
       </section>
-    </Layout>
+    </MainLayout>
   );
 }

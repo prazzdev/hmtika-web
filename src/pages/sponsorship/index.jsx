@@ -1,10 +1,10 @@
-import Layout from "@/components/Layout";
 import SponsorCard from "@/components/fragments/SponsorCard";
+import MainLayout from "@/layouts/MainLayout";
 
 export default function index() {
   return (
     <>
-      <Layout pageTitle="Sponsorship">
+      <MainLayout pageTitle="Sponsorship">
         <section
           className="flex flex-col justify-center items-center pt-[100px] pb-[40px]"
           data-aos="fade-in"
@@ -20,7 +20,7 @@ export default function index() {
             thumbnail="/src/image/mjs-project-apparel.webp"
           />
         </section>
-      </Layout>
+      </MainLayout>
     </>
   );
 }

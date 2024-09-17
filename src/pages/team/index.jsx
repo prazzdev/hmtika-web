@@ -1,9 +1,9 @@
-import Layout from "@/components/Layout";
 import ProfileBox from "../../components/fragments/ProfileBox";
+import MainLayout from "@/layouts/MainLayout";
 
 export default function team() {
   return (
-    <Layout pageTitle="Team">
+    <MainLayout pageTitle="Team">
       <section
         className="dark:bg-gray-800 mt-16 py-6 dark:text-gray-100"
         data-aos="fade-in"
@@ -126,6 +126,6 @@ export default function team() {
           </div>
         </div>
       </section>
-    </Layout>
+    </MainLayout>
   );
 }

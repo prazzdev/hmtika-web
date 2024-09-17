@@ -1,11 +1,11 @@
 import Card from "@/components/fragments/Card";
-import Layout from "@/components/Layout";
+import MainLayout from "@/layouts/MainLayout";
 
 export default function kegiatanRutin() {
   let dir = "/src/image/event/documentation/";
   return (
     <>
-      <Layout pageTitle={"Kegiatan Rutin"}>
+      <MainLayout pageTitle={"Kegiatan Rutin"}>
         <section
           className="pt-[100px]"
           data-aos="fade-in"
@@ -35,7 +35,7 @@ export default function kegiatanRutin() {
             />
           </div>
         </section>
-      </Layout>
+      </MainLayout>
     </>
   );
 }
