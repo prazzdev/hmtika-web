@@ -3,8 +3,10 @@ import Image from "next/image";
 const logo = "/src/image/logo.webp";
 import styles from "./Header.module.css";
 import { useEffect, useState } from "react";
+import menuData from "@/lib/data/menuData";
 
 export default function Header() {
+  const [menus, setMenus] = useState([]);
   const [scrollingDown, setScrollingDown] = useState(false);
   let lastScrollTop = 0;
 
@@ -60,7 +62,7 @@ export default function Header() {
           </Link>
         </div>
         <div className="lg:flex items-center hidden -mt-1 py-4 lg:py-5 text-gray-600">
-          <ul className="menu lg:menu-horizontal bg-gray-100">
+          {/* <ul className="menu lg:menu-horizontal bg-gray-100">
             <li>
               <Link href="/">Beranda</Link>
             </li>
@@ -158,6 +160,26 @@ export default function Header() {
                 </ul>
               </details>
             </li>
+          </ul> */}
+          <ul className="menu lg:menu-horizontal bg-gray-100">
+            {menuData.map((menu, i) => (
+              <li key={i}>
+                {menu.child ? (
+                  <details>
+                    <summary>{menu.name}</summary>
+                    <ul className="bg-gray-100 rounded-lg min-w-[11svw]">
+                      {menu.child.map((subMenu, j) => (
+                        <li key={j}>
+                          <Link href={subMenu.path}>{subMenu.name}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                ) : (
+                  <Link href={menu.path}>{menu.name}</Link>
+                )}
+              </li>
+            ))}
           </ul>
         </div>
       </header>
