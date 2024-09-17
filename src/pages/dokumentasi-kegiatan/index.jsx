@@ -1,11 +1,10 @@
-import EventCarousel from "@/components/fragments/EventCarousel";
-import Layout from "@/components/Layout";
+import MainLayout from "@/layouts/MainLayout";
 
 export default function dokumentasiKegiatan() {
   let dir = "/src/image/event/documentation/";
   return (
     <>
-      <Layout pageTitle={"Dokumentasi Kegiatan"}>
+      <MainLayout pageTitle={"Dokumentasi Kegiatan"}>
         <section
           className="pt-[100px] pb-10"
           // data-aos="fade-in"
@@ -305,7 +304,7 @@ export default function dokumentasiKegiatan() {
             </div>
           </div>
         </section>
-      </Layout>
+      </MainLayout>
     </>
   );
 }

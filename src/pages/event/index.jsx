@@ -1,10 +1,10 @@
-import Layout from "@/components/Layout";
 import Card from "../../components/fragments/Card";
+import MainLayout from "@/layouts/MainLayout";
 
 export default function Event() {
   return (
     <>
-      <Layout pageTitle="Beasiswa">
+      <MainLayout pageTitle="Beasiswa">
         <div
           id="container"
           className="flex flex-wrap justify-around items-center px-6 p-4 lg:p-8 pt-[100px]"
@@ -28,7 +28,7 @@ export default function Event() {
             description="Membangun Digital Nation Indonesia melalui Beasiswa IDCamp 2023"
           />
         </div>
-      </Layout>
+      </MainLayout>
     </>
   );
 }
