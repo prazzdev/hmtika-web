@@ -2,7 +2,6 @@
 
 .ProfileSect {
   background-size: fill;
-  display: flex;
   flex-direction: column;
   position: relative;
   align-items: center;

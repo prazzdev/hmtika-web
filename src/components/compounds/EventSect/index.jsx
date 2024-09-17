@@ -1,5 +1,4 @@
 import EventList from "../EventList";
-import Ripple from "@/components/magicui/ripple";
 
 export default function EventSect() {
   return (
@@ -7,7 +6,7 @@ export default function EventSect() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
-        className="lg:min-w-[100svw] overflow-hidden"
+        className="flex lg:hidden overflow-hidden"
       >
         <path
           fill="#00ADB5"
@@ -27,7 +26,11 @@ export default function EventSect() {
         </div>
       </section>
       <div className="-mt-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          className="flex lg:hidden"
+        >
           <path
             fill="#00ADB5"
             fill-opacity="1"

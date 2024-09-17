@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Card({
@@ -16,12 +17,14 @@ export default function Card({
   return (
     <Link
       href={target}
-      className="relative bg-gray-200 shadow-md mb-8 p-6 rounded-lg lg:min-w-[20svw] lg:max-w-[20svw] lg:min-h-[54svh] text-gray-800"
+      className="relative bg-gray-200 shadow-md mb-8 p-6 rounded-lg lg:min-w-[20svw] lg:max-w-[20svw] lg:min-h-[54svh] 2xl:min-h-[40svh] text-gray-800"
     >
-      <img
+      <Image
+        width={300}
+        height={180}
         src={thumbnail}
         alt=""
-        className="rounded-md w-full max-w-[300px] h-[180px] object-center object-cover"
+        className="rounded-md w-full min-w-[100%] h-[180px] object-center object-cover"
       />
       <div className="mt-6 mb-2">
         <span className="block mb-1 font-bold text-pteal text-xs uppercase tracking-widest">
