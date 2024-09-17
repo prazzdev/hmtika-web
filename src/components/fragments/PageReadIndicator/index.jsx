@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
- 
+
 /**
  * React Hook to get the scroll percentage from the page, returns value from 0 to 100
  */
@@ -19,7 +19,7 @@ export function useReadingProgress() {
     }
     // add scroll event listener
     window.addEventListener("scroll", updateScrollCompletion);
- 
+
     // remove scroll event listener on umount
     return () => {
       window.removeEventListener("scroll", updateScrollCompletion);
@@ -29,19 +29,19 @@ export function useReadingProgress() {
 }
 
 export default function PageReadIndicator() {
-    const completion = useReadingProgress();
-    return (
-        <>
-        <nav className="sticky z-50 bottom-0">
-            <span
-            id="progress-bar"
-            style={{
-                transform: `translateX(${completion - 100}%)`,
-            }}
-            className={`absolute bottom-0 w-full transition-transform duration-150 h-1 bg-pteal`}
-            />
-            {/* Rest of the NavBar */}
-        </nav>
-        </>
-    )
+  const completion = useReadingProgress();
+  return (
+    <>
+      <nav className="bottom-0 z-50 sticky lg:flex hidden">
+        <span
+          id="progress-bar"
+          style={{
+            transform: `translateX(${completion - 100}%)`,
+          }}
+          className={`absolute bottom-0 w-full transition-transform duration-150 h-1 bg-pteal`}
+        />
+        {/* Rest of the NavBar */}
+      </nav>
+    </>
+  );
 }
