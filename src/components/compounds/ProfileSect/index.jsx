@@ -18,11 +18,11 @@ export default function ProfileSect() {
           </p>
           <div className="flex justify-around mt-10">
             <div id="box" className="flex flex-col justify-center items-center">
-              <h1 className="mb-1 text-2xl text-gray-600">13</h1>
+              <h1 className="mb-1 text-2xl text-gray-600">17</h1>
               <h5 className="text-gray-500">Pengurus</h5>
             </div>
             <div id="box" className="flex flex-col justify-center items-center">
-              <h1 className="mb-1 text-2xl text-gray-600">6</h1>
+              <h1 className="mb-1 text-2xl text-gray-600">7</h1>
               <h5 className="text-gray-500">Bidang</h5>
             </div>
           </div>
