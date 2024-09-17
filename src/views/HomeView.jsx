@@ -1,10 +1,12 @@
 import Hero from "@/components/compounds/Hero";
 import MainLayout from "@/layouts/MainLayout";
 import ProfileSect from "@/components/compounds/ProfileSect";
-import EventSect from "@/components/compounds/EventSect";
 import EventList from "@/components/compounds/EventList";
+import { useRouter } from "next/router";
 
 const HomeView = () => {
+  const router = useRouter();
+  console.log(router);
   return (
     <MainLayout pageTitle="">
       <div

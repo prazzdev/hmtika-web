@@ -20,7 +20,7 @@ export default function NavMenu() {
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
           <div className="bottom-[130px] fixed bg-base-20 p-4 w-50 min-h-[300px] text-base-content menu">
             {menuData.map((menu, i) => (
-              <div className="dropdown-right dropdown">
+              <div className="dropdown-right dropdown" key={i}>
                 {menu.child ? (
                   <>
                     <label
@@ -30,6 +30,7 @@ export default function NavMenu() {
                       {menu.name}
                     </label>
                     <ul
+                      key={i}
                       tabIndex={0}
                       className="z-[1] bg-white shadow-lg p-2 rounded-box w-52 dropdown-content menu"
                     >
