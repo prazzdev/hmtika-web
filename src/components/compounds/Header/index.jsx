@@ -62,24 +62,25 @@ export default function Header() {
         </div>
         <div className="lg:flex items-center hidden -mt-1 py-4 lg:py-5 text-gray-600">
           <ul className="menu lg:menu-horizontal bg-gray-100">
-            {menuData.map((menu, i) => (
-              <li key={i}>
-                {menu.child ? (
-                  <details>
-                    <summary>{menu.name}</summary>
-                    <ul className="bg-gray-100 rounded-lg min-w-[11svw]">
-                      {menu.child.map((subMenu, j) => (
-                        <li key={j}>
-                          <Link href={subMenu.path}>{subMenu.name}</Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </details>
-                ) : (
-                  <Link href={menu.path}>{menu.name}</Link>
-                )}
-              </li>
-            ))}
+            {menuData &&
+              menuData.map((menu, i) => (
+                <li key={i}>
+                  {menu.child ? (
+                    <details>
+                      <summary>{menu.name}</summary>
+                      <ul className="bg-gray-100 rounded-lg min-w-[11svw]">
+                        {menu.child.map((subMenu, j) => (
+                          <li key={j}>
+                            <Link href={subMenu.path}>{subMenu.name}</Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </details>
+                  ) : (
+                    <Link href={menu.path}>{menu.name}</Link>
+                  )}
+                </li>
+              ))}
           </ul>
         </div>
       </header>
