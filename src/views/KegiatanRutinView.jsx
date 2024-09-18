@@ -7,16 +7,16 @@ const KegiatanRutinView = () => {
   return (
     <MainLayout pageTitle={"Kegiatan Rutin"}>
       <section
-        className="pt-[100px]"
-        data-aos="fade-in"
-        data-aos-duration="1000"
-        data-aos-delay="300"
-        data-aos-easing="ease-in-out"
+        className="mx-auto mt-16 mb-16 lg:px-[10em] py-8 lg:py-[5em] pb-0 container"
+        // data-aos="fade-in"
+        // data-aos-duration="1000"
+        // data-aos-delay="300"
+        // data-aos-easing="ease-in-out"
       >
         <h1 className="mb-10 font-bold text-center text-pgray text-xl">
           Kegiatan Rutin
         </h1>
-        <div className="flex flex-col items-center">
+        <div className="flex lg:flex-row flex-col lg:justify-center gap-1 lg:gap-10">
           <Card
             thumbnail={
               dir + "276106928_279979457493103_4748464840513651431_n.webp"

@@ -4,19 +4,19 @@ const NextEventView = () => {
   return (
     <MainLayout pageTitle={"Kegiatan yang akan datang"}>
       <section
-        className="pt-[100px]"
-        data-aos="fade-in"
-        data-aos-duration="1000"
-        data-aos-delay="300"
-        data-aos-easing="ease-in-out"
+        className="mx-auto mt-16 mb-16 lg:px-[10em] py-8 lg:py-[5em] pb-0 container"
+        // data-aos="fade-in"
+        // data-aos-duration="1000"
+        // data-aos-delay="300"
+        // data-aos-easing="ease-in-out"
       >
         <h1 className="mb-10 font-bold text-center text-pgray text-xl">
           Kegiatan On Going
         </h1>
-        <div className="px-6 pb-10">
-          <article class="relative bg-gray-100 shadow-md mb-6 p-5 sm:p-6 lg:p-8 pt-6 rounded-xl overflow-hidden">
+        <div className="flex lg:flex-row flex-col lg:justify-center gap-1 lg:gap-10">
+          <article class="relative bg-gray-100 shadow-md mb-6 p-5 sm:p-6 lg:p-8 pt-6 rounded-xl max-w-[100svw] lg:max-w-[25svw] xl:max-w-[20svw] overflow-hidden">
             <div class="flex items-start sm:gap-8">
-              <div
+              {/* <div
                 class="sm:place-content-center sm:border-2 sm:border-indigo-500 hidden sm:grid sm:rounded-full sm:w-20 sm:h-20 sm:shrink-0"
                 aria-hidden="true"
               >
@@ -27,12 +27,9 @@ const NextEventView = () => {
                   <span class="bg-indigo-500 rounded-full w-0.5 h-6"></span>
                   <span class="bg-indigo-500 rounded-full w-0.5 h-8"></span>
                 </div>
-              </div>
+              </div> */}
 
               <div>
-                <strong class="border-gray-400 bg-gray-400 mr-2 px-3 py-1.5 border rounded font-medium text-[10px] text-white">
-                  Training
-                </strong>
                 <strong class="bg-teal-400 px-3 py-1.5 border border-teal-400 rounded font-medium text-[10px] text-white">
                   Web Programming
                 </strong>
@@ -45,11 +42,7 @@ const NextEventView = () => {
 
                 <p class="mt-1 text-justify text-sgray text-sm">
                   Whether you're an aspiring developer or a seasoned coder, join
-                  us to unravel the secrets of this powerful JavaScript library
-                  that empowers you to create seamless, modern, and visually
-                  stunning websites. Get ready to transform your coding skills
-                  into boundless possibilities – step into the world of ReactJS
-                  and watch your web creations come to life!
+                  us to unravel the secrets of this powerful JavaScript library.
                 </p>
 
                 <dl class="flex gap-4 sm:gap-6 mt-4">
