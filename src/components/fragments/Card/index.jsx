@@ -17,7 +17,7 @@ export default function Card({
   return (
     <Link
       href={target}
-      className="relative bg-gray-200 shadow-md mb-8 p-6 rounded-lg lg:min-w-[20svw] lg:max-w-[20svw] lg:min-h-[54svh] 2xl:min-h-[40svh] text-gray-800"
+      className="relative bg-gray-200 shadow-md mb-8 p-6 rounded-lg lg:min-w-[20svw] lg:max-w-[25svw] lg:min-h-[54svh] 2xl:min-h-[40svh] text-gray-800"
     >
       <Image
         width={300}

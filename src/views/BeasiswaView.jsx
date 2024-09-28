@@ -13,7 +13,7 @@ const BeasiswaView = () => {
       >
         <div
           id="container"
-          className="flex lg:flex-row flex-col lg:justify-center gap-1 lg:gap-10"
+          className="flex lg:flex-row flex-col lg:justify-start gap-1 lg:gap-10"
           // data-aos="fade-in"
           // data-aos-duration="1000"
           // data-aos-delay="300"

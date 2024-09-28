@@ -116,7 +116,8 @@ const teamData = [
     ig: "#",
   },
   {
-    thumb: "default.webp?alt=media&token=72c01b91-e64f-4e4c-8d6b-c2850fc0379b",
+    thumb:
+      "6323243031939105899.jpg?alt=media&token=3309e34b-7797-48fc-8c89-30b2a3fde3a8",
     name: "Bambang Fikri S.",
     position: "Humas (Lead)",
     email: "#",

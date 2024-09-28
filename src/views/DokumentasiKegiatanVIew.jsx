@@ -6,7 +6,7 @@ const DokumentasiKegiatanView = () => {
   return (
     <MainLayout pageTitle={"Dokumentasi Kegiatan"}>
       <section
-        className="pt-[100px] pb-10"
+        className="mx-auto mt-16 mb-16 lg:px-[10em] py-8 lg:py-[5em] pb-0 container"
         // data-aos="fade-in"
         // data-aos-duration="1000"
         // data-aos-delay="300"
@@ -15,7 +15,13 @@ const DokumentasiKegiatanView = () => {
         <h1 className="mb-10 font-bold text-center text-pgray text-xl">
           Dokumentasi Kegiatan
         </h1>
-        <div id="eventWrapper" className="flex flex-col items-center">
+        <button className="bg-teal-500 btn" onClick={() => func()}>
+          Click
+        </button>
+        <div
+          id="eventWrapper"
+          className="flex lg:flex-row flex-col lg:justify-center gap-1 lg:gap-10"
+        >
           {/* Workshop PB Rakit 2022 */}
           <div
             id=""
@@ -24,7 +30,7 @@ const DokumentasiKegiatanView = () => {
             <h1 className="mb-4 font-semibold text-center text-sgray">
               Workshop SMK Panca Bhakti Rakit 2022 - HMTIKA Goes To School
             </h1>
-            <div className="rounded-lg w-full h-[200px] overflow-hidden carousel">
+            <div className="relative bg-gray-200 shadow-md mb-8 p-6 rounded-lg lg:min-w-[20svw] lg:max-w-[25svw] lg:min-h-[54svh] 2xl:min-h-[40svh] text-gray-800 overflow-hidden carousel">
               <div
                 id="workshopprb22-1"
                 className="relative w-full carousel-item"
