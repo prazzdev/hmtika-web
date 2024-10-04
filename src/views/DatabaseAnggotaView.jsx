@@ -9,7 +9,7 @@ const DatabaseAnggotaView = () => {
     console.log(e.target.name.value);
     try {
       const response = await fetch(
-        `https://${process.env.NEXT_PUBLIC_HMTIKA_DOMAIN}/api/members`,
+        `${process.env.NEXT_PUBLIC_HMTIKA_DOMAIN}/api/members`,
         {
           method: "POST",
           headers: {
