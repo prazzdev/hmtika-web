@@ -1,9 +1,9 @@
-import UnderConstruction from "@/components/compounds/UnderConstruction";
+import DatabaseAnggotaView from "@/views/DatabaseAnggotaView";
 
 export default function index() {
   return (
     <>
-      <UnderConstruction />
+      <DatabaseAnggotaView />
     </>
   );
 }
