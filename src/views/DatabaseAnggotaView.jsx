@@ -8,18 +8,15 @@ const DatabaseAnggotaView = () => {
     e.preventDefault();
     console.log(e.target.name.value);
     try {
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_HMTIKA_DOMAIN}/api/members`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name: e.target.name.value,
-          }),
-        }
-      );
+      const response = await fetch(`/api/members`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: e.target.name.value,
+        }),
+      });
       if (!response.ok) {
         throw Error("Network response was not ok");
       }
