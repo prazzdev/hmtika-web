@@ -66,7 +66,7 @@ const DatabaseAnggotaView = () => {
               <input
                 type="text"
                 name="name"
-                className="grow min-w-[250px] lg:min-w-[300px]"
+                className="lg:grow min-w-[65vw] lg:min-w-[300px]"
                 placeholder="Search"
               />
               <button type="submit">
