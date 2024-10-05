@@ -3,10 +3,11 @@ import { useState } from "react";
 
 const DatabaseAnggotaView = () => {
   const [memberData, setMemberData] = useState([]);
+  const [memberDetail, setMemberDetail] = useState(null);
 
   const handleSubmit = async (e) => {
+    setMemberDetail(null);
     e.preventDefault();
-    console.log(e.target.name.value);
     try {
       const response = await fetch(`/api/members`, {
         method: "POST",
@@ -29,10 +30,31 @@ const DatabaseAnggotaView = () => {
     }
   };
 
+  const handleDetail = async (id) => {
+    try {
+      const response = await fetch(`/api/members/${id}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      if (!response.ok) {
+        throw Error("Network response was not ok");
+      }
+      const data = await response.json();
+      if (data) {
+        setMemberData([]);
+        setMemberDetail(data);
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <div>
       <MainLayout pageTitle="Database Anggota">
-        <section className="flex flex-col px-[2em] lg:px-[5em] p-8 lg:p-16 pt-[6em] lg:pt-[10em] h-[100vh]">
+        <section className="flex flex-col px-[2em] lg:px-[5em] p-8 lg:p-16 pt-[6em] lg:pt-[10em] min-h-[100vh]">
           <form
             className="flex flex-col lg:flex-row items-center justify-center lg:justify-between"
             onSubmit={handleSubmit}
@@ -63,16 +85,65 @@ const DatabaseAnggotaView = () => {
               </button>
             </label>
           </form>
-          <div className="flex flex-col lg:flex-row items-center py-[1em]">
+          <div className="flex flex-col lg:flex-row items-center py-[1em] lg:gap-[1em] flex-wrap bg-red-00">
             {memberData.map((data, i) => (
               <div
+                onClick={() => handleDetail(data.id)}
                 key={i}
-                className="flex items-center justify-between bg-white p-4 rounded-md my-2 max-w-[100vw] lg:max-w-[30vw]"
+                className="flex items-center justify-between bg-white p-4 rounded-md my-2 min-w-[100%] lg:min-w-[30vw] max-w-[100vw] lg:max-w-[30vw] shadow-md"
               >
                 <p className="text-gray-700 font-bold">{data.nama}</p>
                 <p className="text-gray-500">{data.nim}</p>
               </div>
             ))}
+            {memberDetail && (
+              <div className="flex flex-col bg-white p-4 rounded-md my-2 min-w-[100%] lg:min-w-[20vw] max-w-[100vw] lg:max-w-[30vw] shadow-md">
+                <p className="text-gray-700">
+                  Nama:{" "}
+                  <span className="font-semibold">{memberDetail.nama}</span>
+                </p>
+                <p className="text-gray-700">
+                  NIM: <span className="font-semibold">{memberDetail.nim}</span>
+                </p>
+                <p className="text-gray-700">
+                  Jenis Daftar:{" "}
+                  <span className="font-semibold">
+                    {memberDetail.jenis_daftar}
+                  </span>
+                </p>
+                <p className="text-gray-700">
+                  Jenis Kelamin:{" "}
+                  <span className="font-semibold">
+                    {memberDetail.jenis_kelamin === "L"
+                      ? "Laki-laki"
+                      : "Perempuan"}
+                  </span>
+                </p>
+                <p className="text-gray-700">
+                  Jenjang:{" "}
+                  <span className="font-semibold">{memberDetail.jenjang}</span>
+                </p>
+                <p className="text-gray-700">
+                  Prodi:{" "}
+                  <span className="font-semibold">{memberDetail.prodi}</span>
+                </p>
+                <p className="text-gray-700">
+                  Status:{" "}
+                  <span className="font-semibold">
+                    {memberDetail.status_saat_ini}
+                  </span>
+                </p>
+                <p className="text-gray-700">
+                  Tanggal masuk:{" "}
+                  <span className="font-semibold">
+                    {new Date(memberDetail.tanggal_masuk).toLocaleDateString(
+                      "id-ID",
+                      { year: "numeric", month: "long", day: "numeric" }
+                    )}
+                  </span>
+                </p>
+              </div>
+            )}
           </div>
         </section>
       </MainLayout>
