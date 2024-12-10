@@ -1,8 +1,23 @@
 import Card from "@/components/fragments/Card";
 import MainLayout from "@/layouts/MainLayout";
+import { retrievePostsByTags } from "@/services/posts";
+import { useEffect, useState } from "react";
 
 const KegiatanRutinView = () => {
   let dir = "/src/image/event/documentation/";
+  const [events, setEvents] = useState([]);
+
+  useEffect(() => {
+    const getEvents = async () => {
+      try {
+        const data = await retrievePostsByTags("kegiatan-rutin");
+        setEvents(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    getEvents();
+  }, []);
 
   return (
     <MainLayout pageTitle={"Kegiatan Rutin"}>
@@ -17,22 +32,19 @@ const KegiatanRutinView = () => {
           Kegiatan Rutin
         </h1>
         <div className="flex lg:flex-row flex-col lg:justify-center gap-1 lg:gap-10">
-          <Card
-            thumbnail={
-              dir + "276106928_279979457493103_4748464840513651431_n.webp"
-            }
-            category="Kegiatan Rutin"
-            title="Pelatihan Pemrograman Rutin"
-            description="Pelatihan Pemrograman Rutin setiap jum'at di lab kampus."
-          />
-          <Card
-            thumbnail={
-              dir + "265643106_286429510167578_9076176840685618495_n.webp"
-            }
-            category="Kegiatan Rutin"
-            title="Rapat Rutin Pengurus"
-            description="Rapat rutin pengurus HMTIKA STB dilaksanakan setiap 2 pekan sekali."
-          />
+          {events &&
+            events.map((event, i) => (
+              <Card
+                redirectTo={
+                  "/blog/" + event.title.replaceAll(" ", "-").toLowerCase()
+                }
+                key={event.id}
+                thumbnail={event.featureImage}
+                category={event.tags.toString()}
+                title={event.title}
+                description="Pelatihan Pemrograman Rutin setiap jum'at di lab kampus."
+              />
+            ))}
         </div>
       </section>
     </MainLayout>

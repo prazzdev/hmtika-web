@@ -1,0 +1,35 @@
+.post-wrapper * {
+  font-size: 1em;
+  color: rgb(130, 136, 146);
+  margin-bottom: 0.2em;
+}
+
+.post-wrapper img {
+  margin: 1em 0;
+}
+
+.post-wrapper > h1,
+.post-wrapper > h2,
+.post-wrapper > h3,
+.post-wrapper > h4,
+.post-wrapper > h5,
+.post-wrapper > h6 {
+  color: rgb(88, 95, 105);
+}
+
+.post-wrapper > h1 {
+  font-size: 1.8em;
+}
+.post-wrapper > h2 {
+  font-size: 1.6em;
+}
+.post-wrapper > h3 {
+  font-size: 1.4em;
+}
+
+.post-wrapper p {
+  text-align: justify;
+  margin-bottom: 0.7em;
+  text-indent: 1em;
+  line-height: 1.6em;
+}

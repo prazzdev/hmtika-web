@@ -1,7 +1,23 @@
 import Card from "@/components/fragments/Card";
 import MainLayout from "@/layouts/MainLayout";
+import { retrievePostsByTags } from "@/services/posts";
+import { useEffect, useState } from "react";
 
 const BeasiswaView = () => {
+  const [events, setEvents] = useState([]);
+
+  useEffect(() => {
+    const getEvents = async () => {
+      try {
+        const data = await retrievePostsByTags("program-beasiswa");
+        setEvents(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    getEvents();
+  }, []);
+
   return (
     <MainLayout pageTitle="Beasiswa">
       <section
@@ -19,20 +35,18 @@ const BeasiswaView = () => {
           // data-aos-delay="300"
           // data-aos-easing="ease-in-out"
         >
-          <Card
-            redirectTo={"/event/devhandal2023"}
-            thumbnail="/src/image/event/devhandal.webp"
-            category="Program Beasiswa"
-            title="Bangun Masa Depan dengan Beasiswa Developer Handal"
-            description="Beasiswa belajar coding selama 1 tahun dan sertifikasi developer internasional. Bangun karir impianmu sebagai JavaScript Developer Expert yang kompeten dan handal."
-          />
-          <Card
-            redirectTo={"/event/idcamp2023"}
-            thumbnail="/src/image/event/BLOG-Launching-Program-IDCamp.webp"
-            category="Program Beasiswa"
-            title="IDCamp 2023"
-            description="Membangun Digital Nation Indonesia melalui Beasiswa IDCamp 2023"
-          />
+          {events &&
+            events.map((event) => (
+              <Card
+                redirectTo={
+                  "/blog/" + event.title.replaceAll(" ", "-").toLowerCase()
+                }
+                thumbnail={event.featureImage}
+                category="Program Beasiswa"
+                title={event.title}
+                description="Membangun Digital Nation Indonesia melalui Beasiswa IDCamp 2023"
+              />
+            ))}
         </div>
       </section>
     </MainLayout>
