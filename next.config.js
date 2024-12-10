@@ -1,5 +1,3 @@
-const withMDX = require("@next/mdx")();
-
 // const withPWA = require("next-pwa")({
 //   dest: "public",
 //   register: true,
@@ -10,7 +8,6 @@ const withMDX = require("@next/mdx")();
 const nextConfig = {
   /** @type {import('next').NextConfig} */
   reactStrictMode: false,
-  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   images: {
     remotePatterns: [
       {
@@ -23,4 +20,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withMDX(nextConfig);
+module.exports = nextConfig;
