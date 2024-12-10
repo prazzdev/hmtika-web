@@ -6,9 +6,10 @@ import {
   FaRegEnvelope,
 } from "react-icons/fa6";
 import { BsGlobe, BsInstagram } from "react-icons/bs";
+import Image from "next/image";
 
 const ProfileBox = ({
-  thumb = "default",
+  thumb = process.env.NEXT_PUBLIC_FIREBASE_TEAM_PROFILE_URL + "default",
   name,
   position,
   email,
@@ -19,10 +20,12 @@ const ProfileBox = ({
 }) => {
   return (
     <div className="flex flex-col justify-center bg-gray-100 shadow-md mx-6 my-12 px-8 rounded-md w-full md:w-96 lg:w-80 xl:w-64 text-center">
-      <img
+      <Image
         alt=""
         className="flex-shrink-0 dark:bg-gray-500 bg-cover bg-center -mt-12 rounded-full w-24 h-24 self-center"
-        src={process.env.NEXT_PUBLIC_FIREBASE_TEAM_PROFILE_URL + thumb}
+        height={100}
+        width={100}
+        src={thumb}
       />
       <div className="flex-1 my-4">
         <p className="font-semibold text-pgray text-xl leading-snug">{name}</p>
@@ -72,7 +75,7 @@ const ProfileBox = ({
           rel="noopener noreferrer"
           href={web}
           target="_blank"
-          title="Instagram"
+          title="Website"
           className="hover:text-gray-800"
         >
           {/* <TfiWorld /> */}

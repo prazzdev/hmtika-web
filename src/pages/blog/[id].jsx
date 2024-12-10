@@ -33,7 +33,7 @@ const BlogDetailPage = () => {
                 {postData[0]?.title}
               </h1>
               <h3 className="mb-5">
-                {new Date(postData[0]?.createdAt).toLocaleDateString("id-ID", {
+                {new Date(postData[0]?.date).toLocaleDateString("id-ID", {
                   day: "2-digit",
                   month: "long",
                   year: "numeric",

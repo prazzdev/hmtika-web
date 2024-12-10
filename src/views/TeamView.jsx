@@ -1,8 +1,30 @@
 import ProfileBox from "@/components/fragments/ProfileBox";
 import MainLayout from "@/layouts/MainLayout";
-import teamData from "@/lib/data/teamData";
+import { retrieveCandidates } from "@/services/candidates";
+import { useEffect, useState } from "react";
 
 const TeamView = () => {
+  const [candidates, setCandidates] = useState([]);
+
+  useEffect(() => {
+    const getCandidates = async () => {
+      try {
+        const cachedData = localStorage.getItem("candidates");
+        if (cachedData) {
+          setCandidates(JSON.parse(cachedData));
+        } else {
+          const data = await retrieveCandidates();
+          localStorage.setItem("candidates", JSON.stringify(data));
+          setCandidates(data);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    getCandidates();
+  }, []);
+
   return (
     <MainLayout pageTitle="Susunan Pengurus">
       <section
@@ -20,18 +42,20 @@ const TeamView = () => {
             Periode 2023/2024
           </p>
           <div className="flex flex-row flex-wrap justify-center mt-10 lg:mt-20">
-            {teamData &&
-              teamData.map((data, i) => {
+            {candidates &&
+              candidates.map((candidate, i) => {
                 return (
                   <ProfileBox
                     key={i}
-                    thumb={data.thumb}
-                    name={data.name}
-                    position={data.position}
-                    email={data.email}
-                    linkedIn={data.linkedIn}
-                    github={data.github}
-                    ig={data.ig}
+                    thumb={candidate.picture}
+                    alt={candidate.fullname}
+                    name={candidate.fullname}
+                    position={candidate.position}
+                    email={candidate.email}
+                    linkedIn={candidate.linkedIn}
+                    github={candidate.github}
+                    ig={candidate.instagram}
+                    web={candidate.website}
                   />
                 );
               })}

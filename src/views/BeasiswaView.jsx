@@ -43,7 +43,7 @@ const BeasiswaView = () => {
               <Card
                 redirectTo={"/blog/" + event.slug}
                 thumbnail={event.featureImage}
-                category="Program Beasiswa"
+                category={event.tags[0].replaceAll("-", " ").toString()}
                 title={event.title}
                 description="Membangun Digital Nation Indonesia melalui Beasiswa IDCamp 2023"
               />

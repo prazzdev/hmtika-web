@@ -38,7 +38,7 @@ const KegiatanRutinView = () => {
                 redirectTo={"/blog/" + event.slug}
                 key={event.id}
                 thumbnail={event.featureImage}
-                category={event.tags.toString()}
+                category={event.tags[0].replaceAll("-", " ").toString()}
                 title={event.title}
                 description="Pelatihan Pemrograman Rutin setiap jum'at di lab kampus."
               />
