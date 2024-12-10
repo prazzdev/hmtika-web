@@ -42,6 +42,17 @@ const BlogDetailPage = () => {
       <HelmetProvider>
         <Helmet>
           <title>{postData ? postData[0]?.title : "Loading..."}</title>
+          <meta
+            property="og:image"
+            content={postData && postData[0]?.featureImage}
+          />
+          <meta
+            property="og:image:alt"
+            content={postData && postData[0]?.title}
+          />
+          <meta property="og:image:type" content="image/jpeg" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
         </Helmet>
         <MainLayout pageTitle={postData ? postData[0]?.title : "Loading..."}>
           {postData && (
