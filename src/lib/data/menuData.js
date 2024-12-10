@@ -40,6 +40,10 @@ const menuData = [
         path: "/event/beasiswa",
       },
       {
+        name: "Program Unggulan",
+        path: "/event/program-unggulan",
+      },
+      {
         name: "Kegiatan Rutin",
         path: "/event/kegiatan-rutin",
       },

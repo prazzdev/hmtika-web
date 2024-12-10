@@ -53,9 +53,12 @@ const BlogDetailPage = () => {
               {postData && (
                 <h3 className="text-gray-700 mt-6">
                   Tags:{" "}
-                  <span className="text-sm bg-gray-300 rounded-full py-2 px-4 ml-2">
-                    {postData[0]?.tags}
-                  </span>
+                  {postData[0]?.tags &&
+                    postData[0]?.tags?.map((tag, i) => (
+                      <span className="text-sm bg-gray-300 rounded-full py-2 px-4 ml-2">
+                        {tag}
+                      </span>
+                    ))}
                 </h3>
               )}
             </section>

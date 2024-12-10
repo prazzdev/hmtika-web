@@ -12,7 +12,7 @@ const DefaultLayout = ({ children, pageTitle }) => {
       {children}
       <NavMenu />
       <Footer />
-      <PageReadIndicator />
+      {/* <PageReadIndicator /> */}
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     </>
   );

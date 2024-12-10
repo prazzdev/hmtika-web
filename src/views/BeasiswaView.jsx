@@ -27,6 +27,9 @@ const BeasiswaView = () => {
         // data-aos-delay="300"
         // data-aos-easing="ease-in-out"
       >
+        <h1 className="mb-10 font-bold text-center text-pgray text-xl">
+          Program Beasiswa
+        </h1>
         <div
           id="container"
           className="flex lg:flex-row flex-col lg:justify-start gap-1 lg:gap-10"
@@ -38,9 +41,7 @@ const BeasiswaView = () => {
           {events &&
             events.map((event) => (
               <Card
-                redirectTo={
-                  "/blog/" + event.title.replaceAll(" ", "-").toLowerCase()
-                }
+                redirectTo={"/blog/" + event.slug}
                 thumbnail={event.featureImage}
                 category="Program Beasiswa"
                 title={event.title}
