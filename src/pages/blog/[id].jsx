@@ -57,7 +57,13 @@ const BlogDetailPage = () => {
         <MainLayout pageTitle={postData ? postData[0]?.title : "Loading..."}>
           {postData && (
             <>
-              <section className="mx-auto mt-16 mb-16 lg:px-[10em] py-8 lg:py-[5em] pb-0 container">
+              <section
+                className="mx-auto mt-16 mb-16 lg:px-[10em] py-8 lg:py-[5em] pb-0 container"
+                data-aos="fade-in"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                data-aos-easing="ease-in-out"
+              >
                 <h1 className="text-gray-700 text-xl lg:text-3xl lg:text-bold mb-4">
                   {postData[0]?.title}
                 </h1>

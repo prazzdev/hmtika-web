@@ -65,7 +65,7 @@ export default async function handler(req, res) {
         const postsData = [];
         const data = response.map((article, i) => {
           postsData[i] = {
-            id: article.sys.id,
+            slug: article?.fields.slug,
             title: article?.fields.title,
             description: article?.fields.postDescription?.replaceAll(
               "//",

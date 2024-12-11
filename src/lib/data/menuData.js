@@ -52,8 +52,8 @@ const menuData = [
         path: "/event/next-event",
       },
       {
-        name: "Dokumentasi Kegiatan",
-        path: "/event/dokumentasi-kegiatan",
+        name: "Blog",
+        path: "/blog",
       },
     ],
   },
