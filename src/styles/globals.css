@@ -5,6 +5,8 @@
 *,
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #eee transparent;
 }
 
 @font-face {

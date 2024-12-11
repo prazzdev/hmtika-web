@@ -44,3 +44,7 @@
   text-align: justify;
   line-height: 1.8em;
 }
+
+.post-wrapper img {
+  margin: auto;
+}
