@@ -58,7 +58,7 @@ const BlogDetailPage = () => {
           {postData && (
             <>
               <section className="mx-auto mt-16 mb-16 lg:px-[10em] py-8 lg:py-[5em] pb-0 container">
-                <h1 className="text-gray-700 text-xl lg:text-3xl lg:text-bold lg:mb-4">
+                <h1 className="text-gray-700 text-xl lg:text-3xl lg:text-bold mb-4">
                   {postData[0]?.title}
                 </h1>
                 <h3 className="mb-5">

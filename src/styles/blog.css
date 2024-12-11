@@ -17,19 +17,29 @@
   color: rgb(88, 95, 105);
 }
 
-.post-wrapper > h1 {
+.post-wrapper h1 {
   font-size: 1.8em;
 }
-.post-wrapper > h2 {
-  font-size: 1.6em;
-}
-.post-wrapper > h3 {
+.post-wrapper h2 {
   font-size: 1.4em;
+  margin-top: 1em;
+}
+.post-wrapper h3 {
+  font-size: 1.2em;
+}
+@media (min-width: 768px) {
+  .post-wrapper h2 {
+    font-size: 1.6em;
+  }
 }
 
 .post-wrapper p {
   text-align: justify;
   margin-bottom: 0.7em;
   text-indent: 1em;
-  line-height: 1.6em;
+  line-height: 1.8em;
+}
+
+.post-wrapper li {
+  text-align: justify;
 }
