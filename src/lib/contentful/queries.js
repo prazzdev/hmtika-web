@@ -36,3 +36,18 @@ export const getEntryBySlug = async (slug, type) => {
   const queryResult = await client.getEntries(queryOptions);
   return queryResult.items[0];
 };
+
+export const getMediaByFieldTag = async (tagId) => {
+  const response = await client.getAssets({
+    "metadata.tags.sys.id[in]": tagId,
+  });
+
+  console.log("response di lib", response);
+
+  const mediaItems = response.items.map((item) => ({
+    name: item.fields.file.fileName,
+    alt: item.fields.title,
+    source: item.fields.file.url,
+  }));
+  return mediaItems;
+};

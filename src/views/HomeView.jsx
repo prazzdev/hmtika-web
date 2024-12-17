@@ -2,8 +2,26 @@ import Hero from "@/components/compounds/Hero";
 import MainLayout from "@/layouts/MainLayout";
 import ProfileSect from "@/components/compounds/ProfileSect";
 import EventList from "@/components/compounds/EventList";
+import { useEffect, useState } from "react";
+import { retieveImageByTag } from "@/services/images";
 
 const HomeView = () => {
+  const [heroImage, setHeroImage] = useState([]);
+
+  useEffect(() => {
+    try {
+      const getHeroImage = async () => {
+        const response = await retieveImageByTag("heroImage");
+        console.log("response hero", response);
+        setHeroImage(response.data);
+      };
+
+      getHeroImage();
+    } catch (error) {
+      console.error(error);
+    }
+  }, []);
+
   return (
     <MainLayout pageTitle="">
       <div
@@ -12,7 +30,7 @@ const HomeView = () => {
       // data-aos-delay="300"
       // data-aos-easing="ease-in-out"
       >
-        <Hero />
+        <Hero images={heroImage && heroImage} />
         <ProfileSect />
         <div>
           <svg
