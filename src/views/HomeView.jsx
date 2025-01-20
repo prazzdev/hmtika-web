@@ -4,19 +4,28 @@ import ProfileSect from "@/components/compounds/ProfileSect";
 import EventList from "@/components/compounds/EventList";
 import { useEffect, useState } from "react";
 import { retieveImageByTag } from "@/services/images";
+import { retrievePostsByTags } from "@/services/posts";
 
 const HomeView = () => {
   const [heroImage, setHeroImage] = useState([]);
+  const [dataKegiatan, setDataKegiatan] = useState([]);
+  const [dataKegiatanRutin, setDataKegiatanRutin] = useState([]);
 
   useEffect(() => {
     try {
       const getHeroImage = async () => {
         const response = await retieveImageByTag("heroImage");
-        console.log("response hero", response);
         setHeroImage(response.data);
+      };
+      const getKegiatan = async () => {
+        const responseOne = await retrievePostsByTags("kegiatan-rutin");
+        const responseTwo = await retrievePostsByTags("news");
+        setDataKegiatanRutin(responseOne);
+        setDataKegiatan(responseTwo);
       };
 
       getHeroImage();
+      getKegiatan();
     } catch (error) {
       console.error(error);
     }
@@ -53,7 +62,7 @@ const HomeView = () => {
             <h1 className="mx-auto mb-6 font-bold text-gray-100 text-xl lg:text-2xl uppercase">
               Kegiatan
             </h1>
-            <EventList />
+            <EventList datas={dataKegiatanRutin} />
           </div>
         </section>
         <section
@@ -64,7 +73,7 @@ const HomeView = () => {
             <h1 className="mx-auto mb-6 font-bold text-gray-100 text-xl lg:text-2xl uppercase">
               Berita Terbaru
             </h1>
-            <EventList />
+            <EventList datas={dataKegiatan} />
           </div>
         </section>
         <div className="-mt-1">
