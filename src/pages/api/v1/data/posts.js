@@ -29,7 +29,13 @@ export default async function handler(req, res) {
             tags: article?.fields.tags,
           };
         });
-        return res.status(200).json(postsData);
+        return res
+          .status(200)
+          .json(
+            postsData.sort(
+              (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
+            )
+          );
       }
     });
   } else if (req.query.slug) {
